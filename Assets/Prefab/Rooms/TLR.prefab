@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 2500782041104503789}
   - component: {fileID: 7453309700636188361}
   - component: {fileID: 8454949822025599981}
+  - component: {fileID: 2942755234060843019}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: SpawnPoint
@@ -307,6 +308,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2942755234060843019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3324126080632919150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d105efe0a136948863761f29132cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openingDirection: 3
 --- !u!1 &3594456027972634090
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +533,7 @@ GameObject:
   - component: {fileID: 8443418403824845387}
   - component: {fileID: 6193681615282602317}
   - component: {fileID: 1088648718521452559}
+  - component: {fileID: 1790555767365852785}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: SpawnPoint
@@ -613,6 +628,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1790555767365852785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008345941916350831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d105efe0a136948863761f29132cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openingDirection: 4
 --- !u!1 &5900589811485996110
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +922,7 @@ GameObject:
   - component: {fileID: 6646175884462665198}
   - component: {fileID: 7045657358721630262}
   - component: {fileID: 5201149035238273227}
+  - component: {fileID: 2322739855492664842}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: SpawnPoint
@@ -988,6 +1017,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2322739855492664842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737978832486460730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d105efe0a136948863761f29132cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openingDirection: 1
 --- !u!1 &9098225425227036376
 GameObject:
   m_ObjectHideFlags: 0
