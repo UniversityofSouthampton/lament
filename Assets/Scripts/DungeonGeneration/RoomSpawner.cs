@@ -24,7 +24,8 @@ public class RoomSpawner : MonoBehaviour {
 	}
 
 
-	void Spawn(){
+	void Spawn()
+	{
 		if(spawned == false){
 			if(openingDirection == 1){
 				// Need to spawn a room with a BOTTOM door.
@@ -47,13 +48,21 @@ public class RoomSpawner : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
-		if(other.CompareTag("SpawnPoint")){
-			if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false){
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.CompareTag("SpawnPoint"))
+		{
+			if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+			{
 				Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
 				Destroy(gameObject);
 			}
 			spawned = true;
+		}
+		else if(other.CompareTag("Annihilator"))
+		{
+			Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
+			Destroy(gameObject);
 		}
 	}
 }
