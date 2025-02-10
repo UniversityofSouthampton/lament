@@ -56,7 +56,7 @@ public class RoomSpawner : MonoBehaviour {
 			{
 				Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
 				Destroy(gameObject);
-			}
+			} 
 			spawned = true;
 		}
 		else if(other.CompareTag("Annihilator"))
