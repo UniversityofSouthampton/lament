@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour
@@ -11,10 +12,35 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] leftRooms;
     public GameObject[] rightRooms;
 
-
     public GameObject closedRoom;
 
-    [Header("RespawnPoint Variables")]
+
+
+    public float waitTime;
+    public bool spawnedBoss;
+    public GameObject boss;
+    public List<GameObject> rooms;
+
+    void Update()
+    {
+        if(waitTime <= 0 && spawnedBoss == false)
+        {
+            for (int i = 0; i < rooms.Count; i++)
+            {
+                if (i == rooms.Count-1)
+                {
+                    Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
+                    Debug.Log("Boss is spawned");
+                    spawnedBoss = true;
+                }
+            }
+        }
+        else
+        {
+            waitTime -= Time.deltaTime;
+        }
+    }
+    [Header("RespawnPoint Variables - NOT IN USE")]
 
     public GameObject[] yesTnoLRooms;
     public GameObject[] yesTnoBRooms;
