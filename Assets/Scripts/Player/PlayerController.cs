@@ -2,36 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    // movement
-    public float moveSpeed;
+    //movement
+    public float moveSpeed = 5f;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
 
     [Header("Dash Settings")]
     private float activeMoveSpeed;
-    public float dashSpeed;
-    public float dashLength = .5f, dashCooldown = 1f;
+    public float dashSpeed = 10f;
+    public float dashDuration = 1f;
+    private float dashCooldown = 1f;
 
-    private float dashCounter;
-    private float dashCoolCounter;
+    private bool isDashing = false;
+    private bool canDash = true;
 
-    private bool _isDashing;
-    private bool _canDash;
-
+    //trail
     [SerializeField] private TrailRenderer tr;
 
-    // Start is called before the first frame update
     void Start()
     {
+        canDash = true;
         activeMoveSpeed = moveSpeed;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (_isDashing)
+        if (isDashing)
         {
             return;
         }
@@ -40,38 +38,24 @@ public class PlayerController : MonoBehaviour
         moveInput.y = Input.GetAxisRaw("Vertical");
 
         moveInput.Normalize();
-
         rb2d.velocity = moveInput * activeMoveSpeed;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && canDash)
         {
-            if (dashCoolCounter <=0 && dashCounter <=0)
-            {
-                _canDash = false;
-                _isDashing = true;
-                activeMoveSpeed = dashSpeed;
-                dashCounter = dashLength;
-                tr.emitting = true;
-            }
+            StartCoroutine(Dash());
         }
+    }
+    IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        tr.emitting = true;
+        rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
+        yield return new WaitForSeconds(dashDuration);
+        isDashing = false;
+        tr.emitting = false;
 
-        if (dashCounter > 0)
-        {
-            dashCounter -= Time.deltaTime;
-
-            if (dashCounter <= 0)
-            {
-                _canDash = true;
-                _isDashing = false;
-                activeMoveSpeed = moveSpeed;
-                dashCoolCounter = dashCooldown;
-                tr.emitting = false;
-            }
-        }
-
-        if(dashCoolCounter > 0)
-        {
-            dashCoolCounter -= Time.deltaTime;
-        }
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 }
