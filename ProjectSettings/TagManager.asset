@@ -9,6 +9,7 @@ TagManager:
   - RespawnPoint
   - Annihilator
   - Wall
+  - closedRoom
   layers:
   - Default
   - TransparentFX

@@ -475,6 +475,10 @@ MonoBehaviour:
   - {fileID: 8857163340253859353, guid: da02a79d15d2a4942aa4585bb5f57561, type: 3}
   - {fileID: 6208986503463731148, guid: f14584276b545fe49a068e62b544d3ac, type: 3}
   closedRoom: {fileID: 7653722765347957364, guid: aac8f8d1a8e2f594296fa05f7b68f59a, type: 3}
+  waitTime: 10
+  spawnedBoss: 0
+  boss: {fileID: 4336301240515057174, guid: 4bd74b388a12db9478dafc929cc0e858, type: 3}
+  rooms: []
   yesTnoLRooms:
   - {fileID: 3825455158215962971, guid: 08da2bb2b4576c543a16d9352131f877, type: 3}
   - {fileID: 414161217547836052, guid: 288e4a17d4996e44b9270b184e593802, type: 3}
