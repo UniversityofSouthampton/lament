@@ -8,6 +8,7 @@ TagManager:
   - Rooms
   - RespawnPoint
   - Annihilator
+  - Wall
   layers:
   - Default
   - TransparentFX
