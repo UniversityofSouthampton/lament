@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float activeMoveSpeed;
     public float dashSpeed = 10f;
     public float dashDuration = 1f;
-    private float dashCooldown = 1f;
+    public float dashCooldown = 1f;
 
     private bool isDashing = false;
     private bool canDash = true;
