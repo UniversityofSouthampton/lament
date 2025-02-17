@@ -10,6 +10,7 @@ TagManager:
   - Annihilator
   - Wall
   - closedRoom
+  - CameraTarget
   layers:
   - Default
   - TransparentFX
