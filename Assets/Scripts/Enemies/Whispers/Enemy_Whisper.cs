@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy_Whisper : MonoBehaviour
 {
+    public RoomManager roomManager;
+
     [Header("Stats")]
     public float speed;
     public float stoppingDistance;
@@ -16,12 +18,14 @@ public class Enemy_Whisper : MonoBehaviour
     private Transform player;
 
     [Header("Health")]
-    float health, maxHealth = 3f;
+    public float maxHealth = 3f;
+    public float currentHealth;
+
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        health = maxHealth;
+        currentHealth = maxHealth;
     }
 
     void Update()
@@ -60,9 +64,10 @@ public class Enemy_Whisper : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        if(health <= 0)
+        currentHealth -= damage;
+        if(currentHealth <= 0)
         {
+            roomManager.EnemyKilled(gameObject);
             Destroy(gameObject);
         }
     }

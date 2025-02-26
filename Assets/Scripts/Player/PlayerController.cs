@@ -5,17 +5,18 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //movement
+    private Attack attackScript;
     public float moveSpeed = 5f;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
 
     [Header("Dash Settings")]
     private float activeMoveSpeed;
-    public float dashSpeed = 10f;
-    public float dashDuration = 1f;
-    public float dashCooldown = 1f;
+    public float dashSpeed = 12f;
+    public float dashDuration = 0.25f;
+    public float dashCooldown = 0.5f;
 
-    private bool isDashing = false;
+    public bool isDashing = false;
     private bool canDash = true;
 
     Animator anim;
@@ -33,25 +34,32 @@ public class PlayerMovement : MonoBehaviour
         canDash = true;
         anim = GetComponent<Animator>();
         activeMoveSpeed = moveSpeed;
+        attackScript = GetComponent<Attack>();
     }
 
     void Update()
     {
-        ProcessInputs();
         Animate();
 
         if (isDashing)
         {
             return;
         }
-
         if(Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             StartCoroutine(Dash());
         }
+
+        if(!isDashing)
+        {
+            ProcessInputs();
+        }
+        
+
     }
     IEnumerator Dash()
     {
+        Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
         tr.emitting = true;
@@ -74,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void ProcessInputs()
     {
+        
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 

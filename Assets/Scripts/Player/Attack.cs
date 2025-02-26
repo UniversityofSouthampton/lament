@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public GameObject Melee;
-    bool isAttacking = false;
+    public bool isAttacking = false;
     float atkDuration = 0.3f;
     float atkTimer = 0f;
 
@@ -14,10 +14,12 @@ public class Attack : MonoBehaviour
     {
         CheckMeleeTimer();
 
+        Debug.Log("isAttacking : " + isAttacking);
+
         if(Input.GetMouseButton(0))
         {
             //left click attack
-
+            OnAttack();
         }
     }
     void OnAttack()
