@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - closedRoom
   - CameraTarget
+  - Enemy
   layers:
   - Default
   - TransparentFX

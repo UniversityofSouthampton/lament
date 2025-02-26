@@ -15,9 +15,13 @@ public class Enemy_Whisper : MonoBehaviour
     public GameObject projectile;
     private Transform player;
 
+    [Header("Health")]
+    float health, maxHealth = 3f;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        health = maxHealth;
     }
 
     void Update()
@@ -52,6 +56,14 @@ public class Enemy_Whisper : MonoBehaviour
         else
         {
             timeBetweenShots -= Time.deltaTime;
+        }
+    }
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
