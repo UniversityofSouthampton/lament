@@ -8,8 +8,13 @@ public class Attack : MonoBehaviour
     public bool isAttacking = false;
     float atkDuration = 0.3f;
     float atkTimer = 0f;
+    Animator anim;
 
     // Update is called once per frame
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Update()
     {
         CheckMeleeTimer();
@@ -28,6 +33,7 @@ public class Attack : MonoBehaviour
         {
             Melee.SetActive(true);
             isAttacking = true;
+            anim.SetBool("isAttacking", true);
             //call animator to play melee attack
         }
     }
@@ -40,6 +46,7 @@ public class Attack : MonoBehaviour
             {
                 atkTimer = 0;
                 isAttacking = false;
+                anim.SetBool("isAttacking", false);
                 Melee.SetActive(false);
             }
         }
