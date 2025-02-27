@@ -52,7 +52,7 @@ public class Enemy_Whisper : MonoBehaviour
 
     void HandleProjectile()
     {
-        if(timeBetweenShots <= 0 && (Vector2.Distance(transform.position, player.position) > nearDistance))
+        if(timeBetweenShots <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
