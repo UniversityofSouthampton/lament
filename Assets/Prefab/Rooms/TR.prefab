@@ -6763,6 +6763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Whisper
       objectReference: {fileID: 0}
+    - target: {fileID: 4633829436586096268, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7634734274819399381, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
       propertyPath: roomManager
       value: 
@@ -6957,6 +6961,10 @@ PrefabInstance:
     - target: {fileID: 121822418291411111, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
       propertyPath: m_Name
       value: Enemy_Whisper (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633829436586096268, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7634734274819399381, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
       propertyPath: roomManager
