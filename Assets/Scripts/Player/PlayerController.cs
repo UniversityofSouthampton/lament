@@ -62,10 +62,12 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
+        anim.SetBool("isDashing", true);
         tr.emitting = true;
         rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
+        anim.SetBool("isDashing", false);
         tr.emitting = false;
 
         yield return new WaitForSeconds(dashCooldown);
