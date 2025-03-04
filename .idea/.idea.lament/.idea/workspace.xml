@@ -6,10 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Down Attack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Down Attack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Left Attack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Left Attack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Right Attack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Right Attack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Up Attack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/Up Attack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/protagnist swing 1 (Left).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/protagnist swing 1 (Left).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/protagnist swing 1 (RIGHT).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/protagnist swing 1 (RIGHT).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/swing 1 (FRONT).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/swing 1 (FRONT).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/swing 1 (back).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Attack/swing 1 (back).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Back.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Back.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Front.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Front.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Left.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Left.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Right.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Dash/Dash Right.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleBack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleBack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleFront.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleFront.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleLeft.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleLeft.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleRight.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle/IdleRight.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkBack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkBack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkFront.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkFront.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkLeft.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkLeft.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkRight.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walk/WalkRight.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Idle/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Idle/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +63,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -41,6 +86,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Lament Build 1\lament.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\WillJ\Desktop\Lament Build 1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\lament -debugCodeOptimization" />
@@ -95,12 +148,14 @@
       <workItem from="1739919257452" duration="135000" />
       <workItem from="1740621876613" duration="3338000" />
       <workItem from="1740659177406" duration="2343000" />
+      <workItem from="1741110267199" duration="9433000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />

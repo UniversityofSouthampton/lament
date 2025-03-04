@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9fb5a91329abd504989ddea348e5921b
+guid: 5d697939e849d234eac277cfe4ef1cc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: protagnist swing 1 (Left)_0
+      name: HURT (BACK) protagnist_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275dd8fa8ea3a9f479e97247d4977664
-      internalID: 88307588
+      spriteID: cc59907f358f2fe488b1af3d7cbc0efc
+      internalID: -231359992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagnist swing 1 (Left)_1
+      name: HURT (BACK) protagnist_1
       rect:
         serializedVersion: 2
         x: 60
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eeb2294ccbeec7a4ebcacb269a3a8e4b
-      internalID: 575335365
+      spriteID: 0448e986edc5c104383c6169fe6b6002
+      internalID: -412180562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagnist swing 1 (Left)_2
+      name: HURT (BACK) protagnist_2
       rect:
         serializedVersion: 2
         x: 120
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d12cdc939e5b0da4f915bec21a1bba3a
-      internalID: -971386590
+      spriteID: 84ca72bbba723cc4db57b71fa68c989f
+      internalID: 2098966840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagnist swing 1 (Left)_3
+      name: HURT (BACK) protagnist_3
       rect:
         serializedVersion: 2
         x: 180
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 793b99c79959b0f4bb43bd8771f7f6fb
-      internalID: -1025822358
+      spriteID: eed56178d9bd016468c7e30a775706dc
+      internalID: -12967806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagnist swing 1 (Left)_4
+      name: HURT (BACK) protagnist_4
       rect:
         serializedVersion: 2
         x: 240
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c1bf0ff88301542886c75747c543be
-      internalID: -309194020
+      spriteID: 23fb7552b140dc44c98067f49c8144a6
+      internalID: 1289177092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagnist swing 1 (Left)_5
+      name: HURT (BACK) protagnist_5
       rect:
         serializedVersion: 2
         x: 300
@@ -216,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215f43950d521b44ca6916d478035069
-      internalID: -979986111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: protagnist swing 1 (Left)_6
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 0
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc5a8bb4d3e32ae43aefbe06a0a225f6
-      internalID: -978937935
+      spriteID: 781107e08b9161c4c802312bcf8e9cc2
+      internalID: 948801139
       vertices: []
       indices: 
       edges: []
@@ -254,13 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      protagnist swing 1 (Left)_0: 88307588
-      protagnist swing 1 (Left)_1: 575335365
-      protagnist swing 1 (Left)_2: -971386590
-      protagnist swing 1 (Left)_3: -1025822358
-      protagnist swing 1 (Left)_4: -309194020
-      protagnist swing 1 (Left)_5: -979986111
-      protagnist swing 1 (Left)_6: -978937935
+      HURT (BACK) protagnist_0: -231359992
+      HURT (BACK) protagnist_1: -412180562
+      HURT (BACK) protagnist_2: 2098966840
+      HURT (BACK) protagnist_3: -12967806
+      HURT (BACK) protagnist_4: 1289177092
+      HURT (BACK) protagnist_5: 948801139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

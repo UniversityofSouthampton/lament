@@ -19,7 +19,7 @@ public class Attack : MonoBehaviour
     {
         CheckMeleeTimer();
 
-        Debug.Log("isAttacking : " + isAttacking);
+        //Debug.Log("isAttacking : " + isAttacking);
 
         if(Input.GetMouseButton(0))
         {

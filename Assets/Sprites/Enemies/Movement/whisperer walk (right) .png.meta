@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de125b5d686d1564da2605ab3982020a
+guid: ff9d470d40f8f66458d6894483faa36e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: swing 1 (FRONT)_0
+      name: whisperer walk (right) _0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 60
-        height: 60
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4b6666524aded44397f8126db4693ba
-      internalID: 878162639
+      spriteID: f47a4e21e65ed5648adc3899a5632377
+      internalID: 745524087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swing 1 (FRONT)_1
+      name: whisperer walk (right) _1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 16
         y: 0
-        width: 60
-        height: 60
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95fcf94435e179a47b415b61b5b4bd4a
-      internalID: 1339292174
+      spriteID: 3884b5d716eca1641ad922a6fef631a1
+      internalID: -2093289716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swing 1 (FRONT)_2
+      name: whisperer walk (right) _2
       rect:
         serializedVersion: 2
-        x: 120
+        x: 32
         y: 0
-        width: 60
-        height: 60
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a078806bf60496e44bb44e5e9b2f6042
-      internalID: 932610592
+      spriteID: 1e6c17e2b28c2034f8fc9c077bc3a38f
+      internalID: 468991674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swing 1 (FRONT)_3
+      name: whisperer walk (right) _3
       rect:
         serializedVersion: 2
-        x: 180
+        x: 48
         y: 0
-        width: 60
-        height: 60
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0cfe9e87fce3242bcc4bc6637604f7
-      internalID: -781014929
+      spriteID: d1a496239c6f81c4483e313bb74f70ec
+      internalID: -209644769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swing 1 (FRONT)_4
+      name: whisperer walk (right) _4
       rect:
         serializedVersion: 2
-        x: 240
+        x: 64
         y: 0
-        width: 60
-        height: 60
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 560ac7b801f0e06499d881ed5c5359e2
-      internalID: -2106851247
+      spriteID: 59a0d58f4bffa634180e7a39e1bf6367
+      internalID: -304376066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swing 1 (FRONT)_5
+      name: whisperer walk (right) _5
       rect:
         serializedVersion: 2
-        x: 300
+        x: 80
         y: 0
-        width: 60
-        height: 60
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89aa5484168f52c4dac9ec40bdb63ec8
-      internalID: 964631763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: swing 1 (FRONT)_6
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 0
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9301bc4042b14f488d88e0b388ef6a4
-      internalID: 812043184
+      spriteID: e28a2fc87489b9640bad559626eaafee
+      internalID: -1140921109
       vertices: []
       indices: 
       edges: []
@@ -254,13 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      swing 1 (FRONT)_0: 878162639
-      swing 1 (FRONT)_1: 1339292174
-      swing 1 (FRONT)_2: 932610592
-      swing 1 (FRONT)_3: -781014929
-      swing 1 (FRONT)_4: -2106851247
-      swing 1 (FRONT)_5: 964631763
-      swing 1 (FRONT)_6: 812043184
+      whisperer walk (right) _0: 745524087
+      whisperer walk (right) _1: -2093289716
+      whisperer walk (right) _2: 468991674
+      whisperer walk (right) _3: -209644769
+      whisperer walk (right) _4: -304376066
+      whisperer walk (right) _5: -1140921109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

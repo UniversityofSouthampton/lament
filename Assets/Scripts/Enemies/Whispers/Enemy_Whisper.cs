@@ -21,17 +21,26 @@ public class Enemy_Whisper : MonoBehaviour
     public float maxHealth = 3f;
     public float currentHealth;
 
-
+    Animator anim;
+    private Rigidbody2D rb2d;
+    private float velocityX;
+    private float velocityY;
+    
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
+        anim = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
     }
+    
 
     void Update()
     {
         HandleMovement();
         HandleProjectile();
+        Animate();
+        Debug.Log(rb2d.velocity);
     }
 
     void HandleMovement()
@@ -48,6 +57,13 @@ public class Enemy_Whisper : MonoBehaviour
         {
             transform.position = this.transform.position;
         }
+        
+        // Get the movement direction and calculate the velocity based on the movement
+        Vector2 movement = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime) - (Vector2)transform.position;
+
+        // Store the velocity values in X and Y
+        velocityX = movement.x / Time.deltaTime;
+        velocityY = movement.y / Time.deltaTime;
     }
 
     void HandleProjectile()
@@ -56,6 +72,7 @@ public class Enemy_Whisper : MonoBehaviour
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
+            anim.SetTrigger("isAttacking");
         }
         else
         {
@@ -71,4 +88,11 @@ public class Enemy_Whisper : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    void Animate()
+    {
+        anim.SetFloat("MoveX", velocityX);
+        anim.SetFloat("MoveY", velocityY);
+    }
+    
 }

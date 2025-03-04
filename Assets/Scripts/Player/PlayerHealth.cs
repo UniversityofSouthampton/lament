@@ -12,15 +12,14 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
 
     public float dmgMultiplier = 1;
-
+    Animator anim;
+    
     public void Start()
     {
         currentHealth = maxHealth;
         playerController = GetComponent<PlayerMovement>();
+        anim = GetComponent<Animator>();
     }
-
-    
-    
     
     public void TakeDamage(int damage)
     {
@@ -28,7 +27,8 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damage;
             Debug.Log("Player health: " + currentHealth);
-
+            anim.SetTrigger("isHurt");
+            
             if (currentHealth <= 0)
             {
                 Die();
@@ -53,8 +53,8 @@ public class PlayerHealth : MonoBehaviour
         if(CompareTag("Damage"))
         {
             TakeDamage(1);
+           
         }
     }
-
-
+    
 }
