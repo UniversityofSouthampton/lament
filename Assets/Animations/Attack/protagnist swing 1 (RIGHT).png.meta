@@ -102,8 +102,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b469f06156d9524493ed2017c7f95e6
-      internalID: -928477278
+      spriteID: 72e909d8707efd848a536851d04a103b
+      internalID: -1423228519
       vertices: []
       indices: 
       edges: []
@@ -121,10 +121,10 @@ TextureImporter:
       name: protagnist swing 1 (RIGHT)_1
       rect:
         serializedVersion: 2
-        x: 45
+        x: 60
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 432aeff6a2ab80343afbb731a2c6fe7d
-      internalID: 116904507
+      spriteID: 48ddd81d9b48a6f4cbeb1e94543f00a0
+      internalID: -221640364
       vertices: []
       indices: 
       edges: []
@@ -142,10 +142,10 @@ TextureImporter:
       name: protagnist swing 1 (RIGHT)_2
       rect:
         serializedVersion: 2
-        x: 90
+        x: 120
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 026635d261dfeec4080952df9d7a7115
-      internalID: 1398848895
+      spriteID: 4351fae2163f3dd42b22adc47e49faab
+      internalID: 499917040
       vertices: []
       indices: 
       edges: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: protagnist swing 1 (RIGHT)_3
       rect:
         serializedVersion: 2
-        x: 135
+        x: 180
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a42570fbce5469b4cb3be460dc51dc90
-      internalID: -292730833
+      spriteID: ed2357a32a6967a4cabc6bc381f63332
+      internalID: -1942232128
       vertices: []
       indices: 
       edges: []
@@ -184,10 +184,10 @@ TextureImporter:
       name: protagnist swing 1 (RIGHT)_4
       rect:
         serializedVersion: 2
-        x: 180
+        x: 240
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b930a7cf74a49cf478ca67f502115b5a
-      internalID: 617014035
+      spriteID: 4de426c9190be05478ba47e8204ef2ee
+      internalID: 274828124
       vertices: []
       indices: 
       edges: []
@@ -205,10 +205,10 @@ TextureImporter:
       name: protagnist swing 1 (RIGHT)_5
       rect:
         serializedVersion: 2
-        x: 225
+        x: 300
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c35c67e75db7b614b8339ed44bc2a269
-      internalID: -1211825406
+      spriteID: 91bd78973f689f340b0ba90a68e53fdb
+      internalID: 2054703408
       vertices: []
       indices: 
       edges: []
@@ -226,10 +226,10 @@ TextureImporter:
       name: protagnist swing 1 (RIGHT)_6
       rect:
         serializedVersion: 2
-        x: 270
+        x: 360
         y: 0
-        width: 45
-        height: 32
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1fdc1c97ec400a45a07ae7f41195ae7
-      internalID: -1899923885
+      spriteID: 3d17fd333cc2d0e409c9e712df98da13
+      internalID: -704837223
       vertices: []
       indices: 
       edges: []
@@ -254,13 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      protagnist swing 1 (RIGHT)_0: -928477278
-      protagnist swing 1 (RIGHT)_1: 116904507
-      protagnist swing 1 (RIGHT)_2: 1398848895
-      protagnist swing 1 (RIGHT)_3: -292730833
-      protagnist swing 1 (RIGHT)_4: 617014035
-      protagnist swing 1 (RIGHT)_5: -1211825406
-      protagnist swing 1 (RIGHT)_6: -1899923885
+      protagnist swing 1 (RIGHT)_0: -1423228519
+      protagnist swing 1 (RIGHT)_1: -221640364
+      protagnist swing 1 (RIGHT)_2: 499917040
+      protagnist swing 1 (RIGHT)_3: -1942232128
+      protagnist swing 1 (RIGHT)_4: 274828124
+      protagnist swing 1 (RIGHT)_5: 2054703408
+      protagnist swing 1 (RIGHT)_6: -704837223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
