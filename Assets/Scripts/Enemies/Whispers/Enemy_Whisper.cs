@@ -40,7 +40,7 @@ public class Enemy_Whisper : MonoBehaviour
         HandleMovement();
         HandleProjectile();
         Animate();
-        Debug.Log(rb2d.velocity);
+        
     }
 
     void HandleMovement()
@@ -82,6 +82,7 @@ public class Enemy_Whisper : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        anim.SetTrigger("isHurt");
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
