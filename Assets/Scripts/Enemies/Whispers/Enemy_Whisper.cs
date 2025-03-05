@@ -86,8 +86,16 @@ public class Enemy_Whisper : MonoBehaviour
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
-            Destroy(gameObject);
+            anim.SetTrigger("isDead");
+           StartCoroutine(DestroyEnemy());
+            
         }
+    }
+
+    private IEnumerator DestroyEnemy()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
     }
     
     void Animate()
