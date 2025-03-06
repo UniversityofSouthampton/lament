@@ -6,6 +6,7 @@ public class Attack : MonoBehaviour
 {
     public GameObject Melee;
     public bool isAttacking = false;
+    public bool stopMovement = false;
     float atkDuration = 0.3f;
     float atkTimer = 0f;
     Animator anim;
@@ -21,7 +22,7 @@ public class Attack : MonoBehaviour
 
         //Debug.Log("isAttacking : " + isAttacking);
 
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0) &&!isAttacking)
         {
             //left click attack
             OnAttack();
@@ -31,11 +32,21 @@ public class Attack : MonoBehaviour
     {
         if (!isAttacking)
         {
-            Melee.SetActive(true);
-            isAttacking = true;
             anim.SetBool("isAttacking", true);
+            StartCoroutine(MeleeActive());
+            isAttacking = true;
             //call animator to play melee attack
         }
+    }
+    private IEnumerator MeleeActive()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Melee.SetActive(true);
+        //stopMovement = true;
+        yield return new WaitForSeconds(0.5f);
+        isAttacking = false;
+        Melee.SetActive(false);
+        //stopMovement = false;
     }
     void CheckMeleeTimer()
     {
@@ -45,9 +56,9 @@ public class Attack : MonoBehaviour
             if(atkTimer >= atkDuration)
             {
                 atkTimer = 0;
-                isAttacking = false;
+                //isAttacking = false;
                 anim.SetBool("isAttacking", false);
-                Melee.SetActive(false);
+                //Melee.SetActive(false);
             }
         }
     }

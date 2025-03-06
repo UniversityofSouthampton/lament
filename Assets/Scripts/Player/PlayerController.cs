@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     //movement
-    private Attack attackScript;
+    [Header("Movement")]
     public float moveSpeed = 5f;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
+    bool isWalking = false;
+    private Vector2 lastMoveDirection;
 
     [Header("Dash Settings")]
     private float activeMoveSpeed;
@@ -19,11 +23,10 @@ public class PlayerMovement : MonoBehaviour
     public bool isDashing = false;
     private bool canDash = true;
 
+    [Header("References")]
     Animator anim;
-    private Vector2 lastMoveDirection;
-
     public Transform Aim;
-    bool isWalking = false;
+    private Attack attackScript;
 
 
     //trail
@@ -65,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isDashing", true);
         tr.emitting = true;
         rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
+        
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
         anim.SetBool("isDashing", false);
@@ -81,29 +85,47 @@ public class PlayerMovement : MonoBehaviour
             Vector3 vector3 = Vector3.left * moveInput.x + Vector3.down * moveInput.y;
             Aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
         }
+
+        if(!attackScript.isAttacking)
+        {
+            rb2d.velocity = moveInput * moveSpeed;
+        }
+        else
+        {
+            rb2d.velocity = Vector2.zero;
+        }
     }
     void ProcessInputs()
     {
+        if(!attackScript.isAttacking)
+        {
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
+
+            if ((attackScript.isAttacking) || ((moveX == 0 && moveY == 0) && (moveInput.x !=0 || moveInput.y !=0)))
+            {
+                isWalking = false;
+                lastMoveDirection = moveInput;
+                Vector3 vector3 = Vector3.left * lastMoveDirection.x + Vector3.down * lastMoveDirection.y;
+                Aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
+            }
+            else if (moveX != 0 || moveY != 0)
+            {
+                isWalking = true;
+            }
+            moveInput.x = Input.GetAxisRaw("Horizontal");
+            moveInput.y = Input.GetAxisRaw("Vertical");
+
+            moveInput.Normalize();
+            rb2d.velocity = moveInput * activeMoveSpeed;
         
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-
-        if((moveX == 0 && moveY == 0) && (moveInput.x !=0 || moveInput.y !=0))
-        {
-            isWalking = false;
-            lastMoveDirection = moveInput;
-            Vector3 vector3 = Vector3.left * lastMoveDirection.x + Vector3.down * lastMoveDirection.y;
-            Aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
         }
-        else if (moveX != 0 || moveY != 0)
+        else
         {
-            isWalking = true;
+            moveInput = Vector2.zero;
+            Aim.rotation = this.Aim.rotation;
         }
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
 
-        moveInput.Normalize();
-        rb2d.velocity = moveInput * activeMoveSpeed;
     }
     void Animate()
     {
