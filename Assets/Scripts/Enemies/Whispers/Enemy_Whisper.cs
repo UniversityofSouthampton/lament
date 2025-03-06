@@ -12,6 +12,7 @@ public class Enemy_Whisper : MonoBehaviour
     public float nearDistance;
     public float startTimeBetweenShots;
     private float timeBetweenShots;
+    private bool isDead = false;
 
     [Header("References")]
     public GameObject projectile;
@@ -37,9 +38,13 @@ public class Enemy_Whisper : MonoBehaviour
 
     void Update()
     {
-        HandleMovement();
-        HandleProjectile();
         Animate();
+
+        if(!isDead)
+        {
+            HandleMovement();
+            HandleProjectile();
+        }
         
     }
 
@@ -83,18 +88,21 @@ public class Enemy_Whisper : MonoBehaviour
     {
         currentHealth -= damage;
         anim.SetTrigger("isHurt");
+        Debug.Log("Whisper health is" + currentHealth);
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
             anim.SetTrigger("isDead");
-           StartCoroutine(DestroyEnemy());
+            StartCoroutine(DestroyEnemy());
             
         }
     }
 
     private IEnumerator DestroyEnemy()
     {
+        isDead = true;
         yield return new WaitForSeconds(1f);
+        Debug.Log("Whisper has been killed");
         Destroy(gameObject);
     }
     

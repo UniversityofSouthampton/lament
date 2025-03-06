@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
 
     public float dmgMultiplier = 1;
+    public GameObject player;
     Animator anim;
     
     public void Start()
@@ -19,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         playerController = GetComponent<PlayerMovement>();
         anim = GetComponent<Animator>();
+
     }
     
     public void TakeDamage(int damage)
@@ -26,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         if(!playerController.isDashing)
         {
             currentHealth -= damage;
-            Debug.Log("Player health: " + currentHealth);
+            //Debug.Log("Player health: " + currentHealth);
             anim.SetTrigger("isHurt");
             
             if (currentHealth <= 0)
@@ -43,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        //player.SetActive(false);
         Debug.Log("Player has died!");
     }
     
