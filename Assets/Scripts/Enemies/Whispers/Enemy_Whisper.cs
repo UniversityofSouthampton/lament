@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,12 +28,21 @@ public class Enemy_Whisper : MonoBehaviour
     private float velocityX;
     private float velocityY;
     
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        audioManager.PlaySfx(audioManager.whispervoice);
+
     }
     
 
@@ -78,6 +88,7 @@ public class Enemy_Whisper : MonoBehaviour
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
             anim.SetTrigger("isAttacking");
+            audioManager.PlaySfx(audioManager.whispershoot);
         }
         else
         {
@@ -88,11 +99,13 @@ public class Enemy_Whisper : MonoBehaviour
     {
         currentHealth -= damage;
         anim.SetTrigger("isHurt");
+        audioManager.PlaySfx(audioManager.whisperhurt);
         Debug.Log("Whisper health is" + currentHealth);
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
             anim.SetTrigger("isDead");
+            audioManager.PlaySfx(audioManager.whisperdeath);
             StartCoroutine(DestroyEnemy());
             
         }

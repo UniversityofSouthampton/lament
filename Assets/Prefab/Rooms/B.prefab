@@ -190,7 +190,7 @@ Tilemap:
       - {fileID: -652589256, guid: 10006d1d553c71747ba8393fcf54303a, type: 3}
       - {fileID: 456887048, guid: 10006d1d553c71747ba8393fcf54303a, type: 3}
       - {fileID: 650648302, guid: 10006d1d553c71747ba8393fcf54303a, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: 0, z: 0}
@@ -203,7 +203,7 @@ Tilemap:
       - {fileID: 2043420401, guid: cc3b3013ffa571f45ac629e7d7784511, type: 3}
       - {fileID: 1188217141, guid: cc3b3013ffa571f45ac629e7d7784511, type: 3}
       - {fileID: 1486503658, guid: cc3b3013ffa571f45ac629e7d7784511, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 3, z: 0}
@@ -216,7 +216,7 @@ Tilemap:
       - {fileID: -1770131094, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
       - {fileID: -1689624749, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
       - {fileID: 1401757094, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -331,7 +331,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
+  m_ChunkCullingBounds: {x: 0.5, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1113,7 +1113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7554882564735907027
 Transform:
   m_ObjectHideFlags: 0
@@ -7439,7 +7439,7 @@ Transform:
   m_GameObject: {fileID: 8552774372371244166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.045, y: -0.038, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

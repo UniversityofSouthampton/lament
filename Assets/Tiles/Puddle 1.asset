@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Puddle 1
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_MinSpeed: 1
-  m_MaxSpeed: 1
+  - {fileID: 1957442835, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
+  - {fileID: -30997875, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
+  - {fileID: -497765208, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
+  - {fileID: -1770131094, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
+  - {fileID: -1689624749, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
+  - {fileID: 1401757094, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0

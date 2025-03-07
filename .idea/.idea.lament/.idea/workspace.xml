@@ -5,11 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/BR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/BR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/LB.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/LB.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TL.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TL.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TLR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TLR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathDown.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathLeft.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathRight.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Death/wDeathUp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Angry Door.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Angry Door.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Angry Floor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Angry Floor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Bargaining Door.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Bargaining Door.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Bargaining Floor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Bargaining Floor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Brick texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Brick texture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Denial Door.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Denial Door.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Dep Gate Floor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Dep Gate Floor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression Door 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression Door 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression Door.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression Door.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression Floor Rule.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression Floor Rule.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Depression.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Door Floors.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Door Floors.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Bottom Wall.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Bottom Wall.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Bricks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Bricks.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Bricks.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Bricks.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Floor Tiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Floor Tiles.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Floor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Floor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Left Wall.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Left Wall.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Right Wall.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Right Wall.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Top Wall.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Hub Top Wall.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Puddle 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Puddle 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Puddle 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Puddle 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Puddle 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Puddle 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Tile Sprites/Depression Door_0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Tile Sprites/Depression Door_0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/denial floor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/denial floor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +74,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@3.1.2/Runtime/Tiles/AnimatedTile/AnimatedTile.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -107,6 +166,10 @@
       <workItem from="1741110267199" duration="10133000" />
       <workItem from="1741191166968" duration="1152000" />
       <workItem from="1741194561417" duration="1954000" />
+      <workItem from="1741283455380" duration="9000" />
+      <workItem from="1741285567216" duration="962000" />
+      <workItem from="1741286585149" duration="1771000" />
+      <workItem from="1741365429295" duration="4016000" />
     </task>
     <servers />
   </component>
