@@ -14,12 +14,12 @@ GameObject:
   - component: {fileID: 7943586221995121502}
   - component: {fileID: 8698479511351581075}
   m_Layer: 0
-  m_Name: Wrought
+  m_Name: Enemy_Wrought
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3569401363343450182
 Transform:
   m_ObjectHideFlags: 0

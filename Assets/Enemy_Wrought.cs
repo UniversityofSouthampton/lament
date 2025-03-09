@@ -68,7 +68,9 @@ public class Enemy_Wrought : MonoBehaviour
     {
         if(timeBetweenShots <= 0 && (Vector2.Distance(transform.position, player.position) < nearDistance))
         {
+            timeBetweenShots = startTimeBetweenShots;
             currentCoroutine = StartCoroutine(ActivateAttackForSeconds(2f));
+            isAttacking = true;
         }
         else
         {
@@ -78,7 +80,7 @@ public class Enemy_Wrought : MonoBehaviour
 
     void HandleLook()
     {
-        if (player != null)
+        if (player != null && !isAttacking)
         {
             // Calculate the direction from the enemy to the player
             Vector3 directionToPlayer = player.position - transform.position;
@@ -101,9 +103,8 @@ public class Enemy_Wrought : MonoBehaviour
         // Activate the attack object
         if (Attack_Wrought != null)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
             Attack_Wrought.SetActive(true);
-            isAttacking = true;
         }
 
         // Wait for the specified duration
