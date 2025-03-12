@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
                 isWalking = false;
                 lastMoveDirection = moveInput;
                 Vector3 vector3 = Vector3.left * lastMoveDirection.x + Vector3.down * lastMoveDirection.y;
-                Aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
+                Aim.rotation = Quaternion.LookRotation(Vector3.forward,vector3);
             }
             else if (moveX != 0 || moveY != 0)
             {
