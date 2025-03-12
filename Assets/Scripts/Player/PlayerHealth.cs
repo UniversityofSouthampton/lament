@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     public float maxHealth = 5;
     public float currentHealth;
+    private bool isDead = false;
 
     public float dmgMultiplier = 1;
     public GameObject player;
@@ -33,7 +34,9 @@ public class PlayerHealth : MonoBehaviour
             
             if (currentHealth <= 0)
             {
-                Die();
+                anim.SetTrigger("isDead");
+                StartCoroutine(DestroyPlayer());
+                
             }
         }
         else
@@ -41,13 +44,14 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
     }
-
-    void Die()
+    private IEnumerator DestroyPlayer()
     {
+        isDead = true;
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Player has been killed");
         Destroy(gameObject);
-        //player.SetActive(false);
-        Debug.Log("Player has died!");
     }
+    
     
     
     

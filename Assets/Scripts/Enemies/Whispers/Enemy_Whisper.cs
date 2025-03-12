@@ -111,6 +111,7 @@ public class Enemy_Whisper : MonoBehaviour
         }
     }
 
+   //this numerartor delays the whisper death so the animation plays
     private IEnumerator DestroyEnemy()
     {
         isDead = true;
