@@ -13,7 +13,7 @@ public class Enemy_Whisper : MonoBehaviour
     public float nearDistance;
     public float startTimeBetweenShots;
     private float timeBetweenShots;
-    private bool isDead = false;
+    public bool isDead = false;
 
     [Header("References")]
     public GameObject projectile;
@@ -114,6 +114,7 @@ public class Enemy_Whisper : MonoBehaviour
    //this numerartor delays the whisper death so the animation plays
     private IEnumerator DestroyEnemy()
     {
+        yield return new WaitForSeconds(0.1f);
         isDead = true;
         yield return new WaitForSeconds(1f);
         Debug.Log("Whisper has been killed");

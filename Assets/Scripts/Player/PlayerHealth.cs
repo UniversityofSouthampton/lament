@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private PlayerMovement playerController;
+    private PlayerControllerNew playerController;
 
     [Header("Health Stats")]
 
@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     public void Start()
     {
         currentHealth = maxHealth;
-        playerController = GetComponent<PlayerMovement>();
+        playerController = GetComponent<PlayerControllerNew>();
         anim = GetComponent<Animator>();
 
     }

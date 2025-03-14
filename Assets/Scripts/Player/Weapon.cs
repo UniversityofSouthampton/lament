@@ -8,19 +8,32 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       // checks if tag is an enemy. add enemy tag to an enemy object
+       //Logic for Whisper enemy
+
         Enemy_Whisper enemy = collision.gameObject.GetComponent<Enemy_Whisper>();
+        Enemy_Wrought enemyWrought = collision.gameObject.GetComponent<Enemy_Wrought>();
+        
+        
+        
         if(enemy != null)
         {
-            Debug.Log("Enemy has taken damage");
+            Debug.Log("Enemy  has taken damage");
             enemy.TakeDamage(damage);
         } 
+
+        if(enemyWrought != null)
+        {
+            Debug.Log("Enemy  has taken damage");
+            enemyWrought.TakeDamage(damage);
+        }
 
         if(collision.CompareTag("Enemy"))
         {
             enemy = collision.gameObject.GetComponent<Enemy_Whisper>();
-            Debug.Log("Enemy has taken damage!");
+            enemyWrought = collision.gameObject.GetComponent<Enemy_Wrought>();
+            Debug.Log("Enemy  has taken damage!");
             enemy.TakeDamage(damage);
+            enemyWrought.TakeDamage(damage);
         }
     }
 }
