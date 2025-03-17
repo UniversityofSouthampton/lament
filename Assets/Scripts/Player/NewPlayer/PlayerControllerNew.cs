@@ -6,6 +6,7 @@ public class PlayerControllerNew : MonoBehaviour
 {
     [Header("Movement")]
     private AttackNew attackScript;
+    private PlayerHealth healthScript;
     public float moveSpeed = 5f;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
@@ -40,6 +41,7 @@ public class PlayerControllerNew : MonoBehaviour
         anim = GetComponent<Animator>();
         activeMoveSpeed = moveSpeed;
         attackScript = GetComponent<AttackNew>();
+        healthScript = GetComponent<PlayerHealth>();
     }
 
     void Update()
@@ -47,22 +49,27 @@ public class PlayerControllerNew : MonoBehaviour
         Animate();
         
 
-        if (isDashing)
+        if (isDashing && healthScript.isDead)
         {
             return;
         }
-        if(Input.GetKeyDown(KeyCode.Space) && canDash)
+        if(Input.GetKeyDown(KeyCode.Space) && canDash && !attackScript.isAttacking && !healthScript.isDead)
         {
             StartCoroutine(Dash());
         }
 
-        if(!isDashing)
+        if(!isDashing && !healthScript.isDead)
         {
             if(!attackScript.isAttacking)
             {
                 rb2d.velocity = moveInput * moveSpeed;
             }
             else
+            {
+                rb2d.velocity = Vector2.zero;
+            }
+
+            if(healthScript.isDead)
             {
                 rb2d.velocity = Vector2.zero;
             }

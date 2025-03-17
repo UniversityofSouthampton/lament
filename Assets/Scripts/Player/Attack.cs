@@ -33,8 +33,8 @@ public class Attack : MonoBehaviour
         {
             Melee.SetActive(true);
             isAttacking = true;
-            anim.SetBool("isAttacking", true);
-            //call animator to play melee attack
+            //anim.SetBool("isAttacking", true);
+            anim.Play("Attack");
         }
     }
     void CheckMeleeTimer()
@@ -46,7 +46,7 @@ public class Attack : MonoBehaviour
             {
                 atkTimer = 0;
                 isAttacking = false;
-                anim.SetBool("isAttacking", false);
+                //anim.SetBool("isAttacking", false);
                 Melee.SetActive(false);
             }
         }

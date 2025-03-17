@@ -10,7 +10,7 @@ public class AttackNew : MonoBehaviour
     public GameObject downMelee;
     public GameObject leftMelee;
     public GameObject rightMelee;
-    public float atkDuration = 0.5f;
+    public float atkDuration = 0.6f;
     float atkTimer = 0f;
     public bool isAttacking = false;
     Animator anim;

@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     public float maxHealth = 5;
     public float currentHealth;
-    private bool isDead = false;
+    public bool isDead = false;
 
     public float dmgMultiplier = 1;
     public GameObject player;
