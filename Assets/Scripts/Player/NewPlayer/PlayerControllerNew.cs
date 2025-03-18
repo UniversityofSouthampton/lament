@@ -58,6 +58,11 @@ public class PlayerControllerNew : MonoBehaviour
             StartCoroutine(Dash());
         }
 
+        if(healthScript.isDead)
+        {
+            rb2d.velocity = Vector2.zero;
+        }
+
         if(!isDashing && !healthScript.isDead)
         {
             if(!attackScript.isAttacking)
@@ -68,11 +73,7 @@ public class PlayerControllerNew : MonoBehaviour
             {
                 rb2d.velocity = Vector2.zero;
             }
-
-            if(healthScript.isDead)
-            {
-                rb2d.velocity = Vector2.zero;
-            }
+            
             ProcessInputs();
         }
         

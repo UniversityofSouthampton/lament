@@ -10,7 +10,9 @@ public class PlayerHealth : MonoBehaviour
 
     public float maxHealth = 5;
     public float currentHealth;
+    public float iFrames = 0.5f;
     public bool isDead = false;
+    private bool canTakeDamage = true;
 
     public float dmgMultiplier = 1;
     public GameObject player;
@@ -28,9 +30,10 @@ public class PlayerHealth : MonoBehaviour
     
     public void TakeDamage(int damage)
     {
-        if(!playerController.isDashing)
+        if(!playerController.isDashing && canTakeDamage)
         {
             currentHealth -= damage;
+            StartCoroutine(IsDamaged());
             //Debug.Log("Player health: " + currentHealth);
             anim.SetTrigger("isHurt");
             
@@ -45,6 +48,13 @@ public class PlayerHealth : MonoBehaviour
         {
             return;
         }
+    }
+
+    private IEnumerator IsDamaged()
+    {
+        canTakeDamage = false;
+        yield return new WaitForSeconds(iFrames);
+        canTakeDamage = true;
     }
     private IEnumerator DestroyPlayer()
     {
