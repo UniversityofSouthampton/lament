@@ -15,7 +15,9 @@ public class PlayerHealth : MonoBehaviour
     public float dmgMultiplier = 1;
     public GameObject player;
     Animator anim;
-    
+
+    public SpriteRenderer playerSr;
+    public PlayerControllerNew playerMovement;
     public void Start()
     {
         currentHealth = maxHealth;
@@ -49,7 +51,8 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
         yield return new WaitForSeconds(1f);
         Debug.Log("Player has been killed");
-        Destroy(gameObject);
+        playerSr.enabled = false;
+        playerMovement.enabled = false;
     }
     
     
