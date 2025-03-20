@@ -1,16 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DungeonTransition : MonoBehaviour
 {
+    Animator anim;
+    
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            SceneController.instance.LoadScene("Dungeon");
+            anim.SetTrigger("Opening");
         }
+    }
+
+    private void LoadDungeon()
+    {
+        SceneController.instance.LoadScene("Dungeon");
     }
 
 }
