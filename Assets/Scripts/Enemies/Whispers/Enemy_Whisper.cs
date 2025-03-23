@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +17,7 @@ public class Enemy_Whisper : MonoBehaviour
 
     [Header("References")]
     public GameObject projectile;
+    public GameObject TerraShard;
     private Transform player;
 
     [Header("Health")]
@@ -104,6 +105,7 @@ public class Enemy_Whisper : MonoBehaviour
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
+            Instantiate(TerraShard, transform.position, Quaternion.identity);
             anim.SetTrigger("isDead");
             audioManager.PlaySfx(audioManager.whisperdeath);
             StartCoroutine(DestroyEnemy());

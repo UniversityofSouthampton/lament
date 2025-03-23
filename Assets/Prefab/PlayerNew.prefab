@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 1011477753733219935}
   - component: {fileID: 5837494924873821041}
   - component: {fileID: 7682620909511969905}
+  - component: {fileID: 5793127380532697116}
   m_Layer: 6
   m_Name: PlayerNew
   m_TagString: Player
@@ -702,8 +703,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  iFrames: 0.5
+  isDead: 0
   dmgMultiplier: 1
   player: {fileID: 7590115963827699569}
+  playerSr: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!114 &7682620909511969905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,6 +727,18 @@ MonoBehaviour:
   rightMelee: {fileID: 5433580777035159649}
   atkDuration: 0.4
   isAttacking: 0
+--- !u!114 &5793127380532697116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7590115963827699569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d261007bbb68f84198700e01fe43467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8528764404331549411
 GameObject:
   m_ObjectHideFlags: 0

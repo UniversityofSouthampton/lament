@@ -105,7 +105,9 @@ MonoBehaviour:
   stoppingDistance: 3
   nearDistance: 6
   startTimeBetweenShots: 1.5
+  isDead: 0
   projectile: {fileID: 6759645226174079042, guid: 8577a4d1e68275c4392d30c66343161f, type: 3}
+  TerraShard: {fileID: 5460709333654043518, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
   maxHealth: 3
   currentHealth: 0
 --- !u!61 &6970792803081253778
