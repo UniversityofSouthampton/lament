@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -20,12 +21,14 @@ public class PlayerHealth : MonoBehaviour
 
     public SpriteRenderer playerSr;
     public PlayerControllerNew playerMovement;
+
+    public GameManagerScript gameManager;
     public void Start()
     {
         currentHealth = maxHealth;
         playerController = GetComponent<PlayerControllerNew>();
         anim = GetComponent<Animator>();
-
+        player.GetComponent<AttackNew>().enabled = true;
     }
     
     public void TakeDamage(int damage)
@@ -37,11 +40,12 @@ public class PlayerHealth : MonoBehaviour
             //Debug.Log("Player health: " + currentHealth);
             anim.SetTrigger("isHurt");
             
-            if (currentHealth <= 0)
+            if (currentHealth <= 0 && !isDead)
             {
                 anim.SetTrigger("isDead");
+                player.GetComponent<AttackNew>().enabled = false;
                 StartCoroutine(DestroyPlayer());
-                
+                gameManager.gameOver();
             }
         }
         else

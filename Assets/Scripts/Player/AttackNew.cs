@@ -30,6 +30,7 @@ public class AttackNew : MonoBehaviour
         {
             //left click attack
             HandleAttack();
+            Debug.Log("player has used melee1");
         }
     }
 
