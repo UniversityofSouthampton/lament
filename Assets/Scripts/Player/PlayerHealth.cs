@@ -18,15 +18,18 @@ public class PlayerHealth : MonoBehaviour
     public float dmgMultiplier = 1;
     public GameObject player;
     Animator anim;
+    AudioManager audioManager;
 
     public SpriteRenderer playerSr;
     public PlayerControllerNew playerMovement;
 
     public GameManagerScript gameManager;
+
     public void Start()
     {
         currentHealth = maxHealth;
         playerController = GetComponent<PlayerControllerNew>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         anim = GetComponent<Animator>();
         player.GetComponent<AttackNew>().enabled = true;
     }
@@ -38,10 +41,12 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= damage;
             StartCoroutine(IsDamaged());
             //Debug.Log("Player health: " + currentHealth);
+            audioManager.PlaySfx(audioManager.playerhurt);
             anim.SetTrigger("isHurt");
             
             if (currentHealth <= 0 && !isDead)
             {
+                audioManager.PlaySfx(audioManager.playerdeath);
                 anim.SetTrigger("isDead");
                 player.GetComponent<AttackNew>().enabled = false;
                 StartCoroutine(DestroyPlayer());
