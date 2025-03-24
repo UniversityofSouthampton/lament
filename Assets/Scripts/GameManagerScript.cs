@@ -24,46 +24,58 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Time scale is" + Time.timeScale);
+        
         //when esc is pressed the game will pause
         if (Input.GetKeyDown(KeyCode.Escape) && !gameOverUI.activeSelf)
         {
             if (GameIsPaused)
             {
+                startEnemies();
                 Resume();
                 Cursor.visible = false;
                 player.GetComponent<AttackNew>().enabled = true;
+                player.GetComponent<PlayerControllerNew>().enabled = true;
             }
             else
             {
+                stopEnemies();
                 Pause();
                 Cursor.visible = true;
                 player.GetComponent<AttackNew>().enabled = false;
+                player.GetComponent<PlayerControllerNew>().enabled = false;
             }
         }
         // Show cursor when the gameoverscreen is active and hide the cursor when the gameoverscreen is inactive
         if (gameOverUI.activeInHierarchy)
         {
             StartCoroutine(DelayedDeathScreen());
-
-            //finds all gameobjects under the tag enemy
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            foreach (GameObject enemy in enemies)
-            {
-                //disables the enemy script when the player dies
-                enemy.GetComponent<Enemy_Whisper>().enabled = false;
-            }
+            stopEnemies();
         }
         else
         {
-            Time.timeScale = 1f;
+            //Time.timeScale = 1f;
             isGameOverScreenActive = false;
             Cursor.visible = false;
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            //reables the enemy script when the player respawns
-            foreach (GameObject enemy in enemies)
-            {
-                enemy.GetComponent<Enemy_Whisper>().enabled = true;
-            }
+            startEnemies();
+        }
+    }
+    void stopEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            //disables the enemy script
+            enemy.GetComponent<Enemy_Whisper>().enabled = false;
+        }
+    }
+    void startEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        //reenables the enemy
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.GetComponent<Enemy_Whisper>().enabled = true;
         }
     }
     IEnumerator DelayedDeathScreen()
