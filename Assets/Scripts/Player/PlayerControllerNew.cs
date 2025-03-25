@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class PlayerControllerNew : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PlayerControllerNew : MonoBehaviour
     private Vector2 lastMoveDirection;
     //public Transform Aim;
     bool isWalking = false;
+    public bool isFalling = false;
     
     [Header("FacingDirection")]
     public bool isFacingLeft = false;
@@ -48,7 +50,6 @@ public class PlayerControllerNew : MonoBehaviour
     {
         Animate();
         
-
         if (isDashing && healthScript.isDead)
         {
             return;
@@ -76,6 +77,7 @@ public class PlayerControllerNew : MonoBehaviour
             
             ProcessInputs();
         }
+
         
 
     }
@@ -168,7 +170,10 @@ public class PlayerControllerNew : MonoBehaviour
 
     }
 
-
+    public void Fall()
+    {
+        //play animation
+    }
 
     void Animate()
     {
