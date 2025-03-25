@@ -11,17 +11,15 @@ public class AudioManager : MonoBehaviour
 
    [Header("Audio Clips")]
    public AudioClip ambience;
-   public AudioClip whisperdeath;
    public AudioClip dash;
    public AudioClip playerhurt;
-   public AudioClip playerdeath;   
+   public AudioClip playerdeath;
    public AudioClip whisperhurt;
    public AudioClip whispershoot;   
    public AudioClip whispervoice;
+   public AudioClip whisperdeath;
 
-
-
-   private void Start()
+    private void Start()
    {
       backgroundSound.Play();
    }
@@ -29,5 +27,6 @@ public class AudioManager : MonoBehaviour
    public void PlaySfx(AudioClip clip)
    {
       enemySound.PlayOneShot(clip);
-   }
+      playerSound.PlayOneShot(clip);
+    }
 }
