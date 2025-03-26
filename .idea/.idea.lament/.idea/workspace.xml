@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD/HeartDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD/HeartDisplay.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Lament Build 1\lament.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Lament Build 1/lament.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\WillJ\Desktop\Lament Build 1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -113,6 +115,7 @@
       <workItem from="1742322167986" duration="3341000" />
       <workItem from="1742493584130" duration="5068000" />
       <workItem from="1742815185564" duration="3417000" />
+      <workItem from="1743017014778" duration="699000" />
     </task>
     <servers />
   </component>
