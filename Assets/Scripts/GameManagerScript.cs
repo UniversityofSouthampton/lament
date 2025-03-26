@@ -35,10 +35,6 @@ public class GameManagerScript : MonoBehaviour
 
         Debug.Log("Game pause" + GameIsPaused);
 
-        if (!gameOverUI.activeSelf && !GameIsPaused)
-        {
-            Time.timeScale = 1f;
-        }
         
         //when esc is pressed the game will pause
         if (Input.GetKeyDown(KeyCode.Escape) && !gameOverUI.activeSelf)
@@ -68,7 +64,7 @@ public class GameManagerScript : MonoBehaviour
         }
         else
         {
-            setTimeScale();
+            //setTimeScale();
             isGameOverScreenActive = false;
             Cursor.visible = false;
             startEnemies();
@@ -107,7 +103,7 @@ public class GameManagerScript : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        setTimeScale();
+        Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
