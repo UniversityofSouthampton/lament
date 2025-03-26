@@ -128,6 +128,13 @@ public class GameManagerScript : MonoBehaviour
         setTimeScale();
     }
 
+    public void restarttut()
+    {
+        //sends player back to tutorial
+        SceneManager.LoadScene("Tutorial");
+        setTimeScale();
+    }
+
     public void mainMenu()
     {
         //sends player back to main menu
