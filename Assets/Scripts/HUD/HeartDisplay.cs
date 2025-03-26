@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,7 +26,7 @@ public class HeartDisplay: MonoBehaviour
         {
             img.sprite = emptyHeart;
         }
-       for (int i = 0; i < health; i++)
+        for (int i = 0; i < health; i++)
         {
             hearts[i].sprite = fullHeart;
         }
