@@ -16,6 +16,8 @@ TagManager:
   - Audio
   - Fall
   - Item
+  - GameOverUI
+  - PauseMenuUI
   layers:
   - Default
   - TransparentFX

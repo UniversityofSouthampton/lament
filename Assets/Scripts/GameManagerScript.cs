@@ -18,6 +18,13 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
+        Unable to use GameObject.Find on gameobjects that are inactive in the scene
+        gameOverUI = GameObject.FindGameObjectWithTag("GameOverUI");
+        pauseMenuUI = GameObject.FindGameObjectWithTag("PauseMenuUI");
+        player = GameObject.FindGameObjectWithTag("Player");
+        */
+
         Cursor.visible = false;
     }
 
@@ -25,6 +32,13 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         Debug.Log("Time scale is" + Time.timeScale);
+
+        Debug.Log("Game pause" + GameIsPaused);
+
+        if (!gameOverUI.activeSelf && !GameIsPaused)
+        {
+            Time.timeScale = 1f;
+        }
         
         //when esc is pressed the game will pause
         if (Input.GetKeyDown(KeyCode.Escape) && !gameOverUI.activeSelf)
@@ -54,7 +68,7 @@ public class GameManagerScript : MonoBehaviour
         }
         else
         {
-            //Time.timeScale = 1f;
+            setTimeScale();
             isGameOverScreenActive = false;
             Cursor.visible = false;
             startEnemies();
@@ -68,6 +82,10 @@ public class GameManagerScript : MonoBehaviour
             //disables the enemy script
             enemy.GetComponent<Enemy_Whisper>().enabled = false;
         }
+    }
+    void setTimeScale()
+    {
+        Time.timeScale = 1f;
     }
     void startEnemies()
     {
@@ -89,7 +107,7 @@ public class GameManagerScript : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        setTimeScale();
         GameIsPaused = false;
     }
 
@@ -110,8 +128,8 @@ public class GameManagerScript : MonoBehaviour
     public void restart()
     {
         //sends player back to hub
-        Time.timeScale = 1f;
         SceneManager.LoadScene("Hub");
+        setTimeScale();
     }
 
     public void mainMenu()

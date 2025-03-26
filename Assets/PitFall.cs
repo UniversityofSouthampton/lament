@@ -19,6 +19,20 @@ public class PitFall : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            if(!other.GetComponent<PlayerControllerNew>().isDashing)
+            {
+                other.GetComponent<PlayerHealth>().TakeDamage(damage);
+                other.GetComponent<PlayerControllerNew>().Fall();
+                player.GetComponent<AttackNew>().isAttacking = true;
+                player.GetComponent<AttackNew>().enabled = false;
+                //player.GetComponent<PlayerControllerNew>().enabled = false;
+                StartCoroutine(Fall());
+            }           
+            else
+            {
+                return;
+            }
+
             other.GetComponent<PlayerHealth>().TakeDamage(damage);
             other.GetComponent<PlayerControllerNew>().Fall();
             player.GetComponent<AttackNew>().isAttacking = true;
