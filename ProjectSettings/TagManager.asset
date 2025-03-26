@@ -15,6 +15,7 @@ TagManager:
   - Damage
   - Audio
   - Fall
+  - Item
   layers:
   - Default
   - TransparentFX

@@ -214,7 +214,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16.8, y: 8.2, z: 1}
+  m_LocalScale: {x: 8.819999, y: 16.707499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1301642181}
@@ -516,7 +516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 78, y: -50.200012}
+  m_AnchoredPosition: {x: 78, y: -50.19995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!4 &186877488 stripped
@@ -12747,7 +12747,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2385098768886233031, guid: c1a9929ef2338404aa4b9ceb788efbee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.33
+      value: -6.78
       objectReference: {fileID: 0}
     - target: {fileID: 2385098768886233031, guid: c1a9929ef2338404aa4b9ceb788efbee, type: 3}
       propertyPath: m_LocalPosition.y

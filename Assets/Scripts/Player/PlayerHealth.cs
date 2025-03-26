@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private PlayerControllerNew playerController;
+   private PlayerControllerNew playerController;
 
     [Header("Health Stats")]
 
@@ -33,17 +33,17 @@ public class PlayerHealth : MonoBehaviour
         anim = GetComponent<Animator>();
         player.GetComponent<AttackNew>().enabled = true;
     }
-    
+
     public void TakeDamage(int damage)
     {
-        if(!playerController.isDashing && canTakeDamage)
+        if (!playerController.isDashing && canTakeDamage)
         {
             currentHealth -= damage;
             StartCoroutine(IsDamaged());
             //Debug.Log("Player health: " + currentHealth);
             audioManager.PlaySfx(audioManager.playerhurt);
             anim.SetTrigger("isHurt");
-            
+
             if (currentHealth <= 0 && !isDead)
             {
                 audioManager.PlaySfx(audioManager.playerdeath);
@@ -73,17 +73,13 @@ public class PlayerHealth : MonoBehaviour
         playerSr.enabled = false;
         playerMovement.enabled = false;
     }
-    
-    
-    
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(CompareTag("Damage"))
+        if (CompareTag("Damage"))
         {
             TakeDamage(1);
-           
+
         }
     }
-    
 }
