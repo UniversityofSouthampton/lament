@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
    public AudioClip dash;
    public AudioClip playerhurt;
    public AudioClip playerdeath;
+   public AudioClip playerattack;
    public AudioClip whisperhurt;
    public AudioClip whispershoot;   
    public AudioClip whispervoice;
