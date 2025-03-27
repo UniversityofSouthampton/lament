@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -20,6 +21,7 @@ public class Enemy_Wrought : MonoBehaviour
 
     [Header("References")]
     public GameObject Attack_Wrought;
+    public Transform Sprite_Wrought;
     private Transform player;
     private Coroutine currentCoroutine;
 
@@ -50,6 +52,14 @@ public class Enemy_Wrought : MonoBehaviour
         HandleMovement();
         HandleAttack();
         HandleLook();
+    }
+
+    void LateUpdate()
+    {
+        if (Sprite_Wrought != null)
+        {
+            Sprite_Wrought.rotation = transform.rotation * Quaternion.Inverse(transform.rotation);
+        }
     }
 
     void HandleMovement()
