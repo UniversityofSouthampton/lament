@@ -31,9 +31,9 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Time scale is" + Time.timeScale);
+//        Debug.Log("Time scale is" + Time.timeScale);
 
-        Debug.Log("Game pause" + GameIsPaused);
+//        Debug.Log("Game pause" + GameIsPaused);
 
         
         //when esc is pressed the game will pause
@@ -76,7 +76,15 @@ public class GameManagerScript : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             //disables the enemy script
-            enemy.GetComponent<Enemy_Whisper>().enabled = false;
+            if (enemy.GetComponent<Enemy_Whisper>() is not null)
+            {
+                enemy.GetComponent<Enemy_Whisper>().enabled = false;
+            }
+            
+            if (enemy.GetComponent<Enemy_Wrought>() is not null)
+            {
+                enemy.GetComponent<Enemy_Wrought>().enabled = false;
+            }
         }
     }
     void setTimeScale()
@@ -89,7 +97,15 @@ public class GameManagerScript : MonoBehaviour
         //reenables the enemy
         foreach (GameObject enemy in enemies)
         {
-            enemy.GetComponent<Enemy_Whisper>().enabled = true;
+            if (enemy.GetComponent<Enemy_Whisper>() is not null)
+            {
+                enemy.GetComponent<Enemy_Whisper>().enabled = true;
+            }
+            
+            if (enemy.GetComponent<Enemy_Wrought>() is not null)
+            {
+                enemy.GetComponent<Enemy_Wrought>().enabled = true;
+            }
         }
     }
     IEnumerator DelayedDeathScreen()

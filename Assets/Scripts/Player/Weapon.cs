@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
             enemyWrought = collision.gameObject.GetComponent<Enemy_Wrought>();
             Debug.Log("Enemy  has taken damage!");
             enemy.TakeDamage(damage);
-            enemyWrought.TakeDamage(damage);
+//            enemyWrought.TakeDamage(damage);
         }
     }
 }

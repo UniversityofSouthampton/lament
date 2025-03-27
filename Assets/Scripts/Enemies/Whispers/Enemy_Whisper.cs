@@ -88,7 +88,7 @@ public class Enemy_Whisper : MonoBehaviour
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
-            anim.SetTrigger("isAttacking");
+           // anim.SetTrigger("isAttacking");
             audioManager.PlaySfx(audioManager.whispershoot);
         }
         else

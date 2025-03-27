@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Enemy_Wrought : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Enemy_Wrought : MonoBehaviour
     private float timeBetweenShots; 
     public float duration = 1f;
     public bool isAttacking;
+    public bool isDead = false;
+
 
     [Header("References")]
     public GameObject Attack_Wrought;
@@ -23,17 +26,27 @@ public class Enemy_Wrought : MonoBehaviour
     [Header("Health")]
     public float maxHealth = 3f;
     public float currentHealth;
-
+    
+    Animator anim;
+    private Rigidbody2D rb2d;
+    private float velocityX;
+    private float velocityY;
+    
+    AudioManager audioManager;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
+        anim = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
         isAttacking = false;
     }
 
     void Update()
     {
+        Animate();
+
         HandleMovement();
         HandleAttack();
         HandleLook();
@@ -121,10 +134,26 @@ public class Enemy_Wrought : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        anim.SetTrigger("isHurt");
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
-            Destroy(gameObject);
+            anim.SetTrigger("isDead");
+            StartCoroutine(DestroyEnemy());
         }
+    }
+    private IEnumerator DestroyEnemy()
+    {
+        yield return new WaitForSeconds(0.1f);
+        isDead = true;
+        yield return new WaitForSeconds(1f);
+        Debug.Log("wrought has been killed");
+        Destroy(gameObject);
+    }
+
+    void Animate()
+    {
+        anim.SetFloat("MoveX", velocityX);
+        anim.SetFloat("MoveY", velocityY);
     }
 }

@@ -6,8 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD/HeartDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD/HeartDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemies/Enemy_Wrought.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemies/Enemy_Wrought.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/BR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/BR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/L.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/L.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TBR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TBR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@3.1.2/Runtime/Tiles/AnimatedTile/AnimatedTile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -115,7 +127,9 @@
       <workItem from="1742322167986" duration="3341000" />
       <workItem from="1742493584130" duration="5068000" />
       <workItem from="1742815185564" duration="3417000" />
-      <workItem from="1743017014778" duration="699000" />
+      <workItem from="1743017014778" duration="4492000" />
+      <workItem from="1743029575658" duration="778000" />
+      <workItem from="1743070895862" duration="2748000" />
     </task>
     <servers />
   </component>

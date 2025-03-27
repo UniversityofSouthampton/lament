@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         playerController = GetComponent<PlayerControllerNew>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+       // audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         anim = GetComponent<Animator>();
         player.GetComponent<AttackNew>().enabled = true;
     }
@@ -41,12 +41,12 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= damage;
             StartCoroutine(IsDamaged());
             //Debug.Log("Player health: " + currentHealth);
-            audioManager.PlaySfx(audioManager.playerhurt);
+//            audioManager.PlaySfx(audioManager.playerhurt);
             anim.SetTrigger("isHurt");
 
             if (currentHealth <= 0 && !isDead)
             {
-                audioManager.PlaySfx(audioManager.playerdeath);
+               // audioManager.PlaySfx(audioManager.playerdeath);
                 anim.SetTrigger("isDead");
                 player.GetComponent<AttackNew>().enabled = false;
                 StartCoroutine(DestroyPlayer());

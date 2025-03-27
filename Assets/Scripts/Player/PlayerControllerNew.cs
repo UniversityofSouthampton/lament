@@ -46,7 +46,7 @@ public class PlayerControllerNew : MonoBehaviour
         activeMoveSpeed = moveSpeed;
         attackScript = GetComponent<AttackNew>();
         healthScript = GetComponent<PlayerHealth>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+//        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -89,7 +89,7 @@ public class PlayerControllerNew : MonoBehaviour
         Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
-        audioManager.PlaySfx(audioManager.dash);
+        //audioManager.PlaySfx(audioManager.dash);
         anim.SetBool("isDashing", true);
         tr.emitting = true;
         rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
