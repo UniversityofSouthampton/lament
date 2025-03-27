@@ -23,6 +23,8 @@ public class PlayerControllerNew : MonoBehaviour
 
     [Header("References")]
     Animator anim;
+    public int playerLayer;
+    public int pitFallLayer;
 
     [Header("Checks")]
     private Vector2 lastMoveDirection;
@@ -41,6 +43,8 @@ public class PlayerControllerNew : MonoBehaviour
 
     void Start()
     {
+        pitFallLayer = LayerMask.NameToLayer("PlayerCanDashOver");
+
         canDash = true;
         anim = GetComponent<Animator>();
         activeMoveSpeed = moveSpeed;
@@ -89,14 +93,19 @@ public class PlayerControllerNew : MonoBehaviour
         Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
+        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
         audioManager.PlaySfx(audioManager.dash);
         anim.SetBool("isDashing", true);
         tr.emitting = true;
+        //rb2d.isKinematic = true;
         rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
+        
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
+        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, false);
         anim.SetBool("isDashing", false);
         tr.emitting = false;
+        //rb2d.isKinematic = false;
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
