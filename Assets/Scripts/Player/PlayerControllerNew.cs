@@ -14,8 +14,8 @@ public class PlayerControllerNew : MonoBehaviour
 
     [Header("Dash Settings")]
     private float activeMoveSpeed;
-    public float dashSpeed = 12f;
-    public float dashDuration = 0.25f;
+    public float dashSpeed = 15f;
+    public float dashDuration = 0.45f;
     public float dashCooldown = 0.5f;
 
     public bool isDashing = false;

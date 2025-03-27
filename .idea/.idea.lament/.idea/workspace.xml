@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/LB.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/LB.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PitFall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PitFall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/LR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/LR.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/Hazards/Pitfall 2X3/2x3 Pitfalls.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/Hazards/Pitfall 2X3/2x3 Pitfalls.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/Hazards/Pitfall 3x3/3x3 Pitfall.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/Hazards/Pitfall 3x3/3x3 Pitfall.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Enemy_Wrought.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Enemy_Wrought.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Lament Build 1/lament.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Lament Build 1\lament.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\WillJ\Desktop\Lament Build 1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -123,6 +123,7 @@
       <workItem from="1743017014778" duration="4492000" />
       <workItem from="1743029575658" duration="778000" />
       <workItem from="1743070895862" duration="7727000" />
+      <workItem from="1743086444869" duration="1767000" />
     </task>
     <servers />
   </component>
