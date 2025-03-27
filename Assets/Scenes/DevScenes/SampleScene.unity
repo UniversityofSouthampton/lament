@@ -211,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 121822418291411111, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7634734274819399381, guid: 758a9b80d85cc384d876ea727ff3172a, type: 3}
       propertyPath: speed
@@ -407,6 +407,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1379485705825934361, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3569401363343450182, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.51
@@ -453,6 +457,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6099177952562736297, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943586221995121502, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Mass
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075647133745113291, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075647133745113291, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075647133745113291, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8388605136034726933, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
@@ -462,6 +482,22 @@ PrefabInstance:
     - target: {fileID: 8698479511351581075, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
       propertyPath: speed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021762033861206328, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021762033861206328, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021762033861206328, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021762033861206328, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1592,6 +1628,7 @@ MonoBehaviour:
   dash: {fileID: 8300000, guid: 520ee567bff5b1444907b5b9510591fd, type: 3}
   playerhurt: {fileID: 8300000, guid: cbf91390a850ce74b9556525c1ac153b, type: 3}
   playerdeath: {fileID: 8300000, guid: bfc8e874163d6634f9ea85be5b0c8108, type: 3}
+  playerattack: {fileID: 0}
   whisperhurt: {fileID: 8300000, guid: 266ad390aa665a34288ccc0a5f9f973d, type: 3}
   whispershoot: {fileID: 8300000, guid: bb5eb91447b0ca6448ceba5ea4fa2f91, type: 3}
   whispervoice: {fileID: 8300000, guid: e5e01fd45bd15a24abd6ea3a86af9aa3, type: 3}
