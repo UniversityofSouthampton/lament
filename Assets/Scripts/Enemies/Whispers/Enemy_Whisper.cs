@@ -30,7 +30,8 @@ public class Enemy_Whisper : MonoBehaviour
     private float velocityY;
     
     AudioManager audioManager;
-
+    
+    private bool hasSpawned = false;
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -45,16 +46,28 @@ public class Enemy_Whisper : MonoBehaviour
         audioManager.PlaySfx(audioManager.whispervoice);
 
     }
-    
 
+    private void OnEnable()
+    {
+        StartCoroutine(Spawn());
+    }
+
+    IEnumerator Spawn()
+    {
+        yield return new WaitForSeconds(1f);
+        hasSpawned = true;
+    }
     void Update()
     {
-        Animate();
+        if (hasSpawned)
+        {  
+            Animate();
 
-        if(!isDead)
-        {
-            HandleMovement();
-            HandleProjectile();
+            if(!isDead)
+            {
+                HandleMovement();
+                HandleProjectile();
+            }
         }
         
     }

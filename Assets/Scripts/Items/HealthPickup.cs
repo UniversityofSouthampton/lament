@@ -15,16 +15,19 @@ public class HealthPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (playerHealth.currentHealth < playerHealth.maxHealth)
+        if (collision.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            if (playerHealth.currentHealth == 4f)
+            if (playerHealth.currentHealth < playerHealth.maxHealth)
             {
-                playerHealth.currentHealth = playerHealth.currentHealth + 1;
-            }
-            else
-            {
-                playerHealth.currentHealth = playerHealth.currentHealth + healthAddition;
+                Destroy(gameObject);
+                if (playerHealth.currentHealth == 4f)
+                {
+                    playerHealth.currentHealth = playerHealth.currentHealth + 1;
+                }
+                else
+                {
+                    playerHealth.currentHealth = playerHealth.currentHealth + healthAddition;
+                }
             }
         }
     }

@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
@@ -13,9 +15,16 @@ public class RoomManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            ActivateObjects();
             enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+            StartCoroutine(ActivateObject());
+            Debug.Log("PLayer has entered the room!");
         }
+    }
+
+    IEnumerator ActivateObject()
+    {
+        yield return new WaitForSeconds(1f);
+        ActivateObjects();
     }
 
     // Activate all the GameObjects in the list
