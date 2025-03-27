@@ -27,8 +27,8 @@ MonoBehaviour:
     - {fileID: -1691019842, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     - {fileID: -173123540, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     m_GameObject: {fileID: 0}
-    m_MinAnimationSpeed: 1
-    m_MaxAnimationSpeed: 1
+    m_MinAnimationSpeed: 3
+    m_MaxAnimationSpeed: 3
     m_PerlinScale: 0.5
     m_Output: 2
     m_ColliderType: 1
@@ -55,8 +55,8 @@ MonoBehaviour:
     - {fileID: 2096888408, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     - {fileID: -30152753, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     m_GameObject: {fileID: 0}
-    m_MinAnimationSpeed: 1
-    m_MaxAnimationSpeed: 1
+    m_MinAnimationSpeed: 3
+    m_MaxAnimationSpeed: 3
     m_PerlinScale: 0.5
     m_Output: 2
     m_ColliderType: 1
@@ -83,8 +83,8 @@ MonoBehaviour:
     - {fileID: 925998450, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     - {fileID: -594037844, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     m_GameObject: {fileID: 0}
-    m_MinAnimationSpeed: 1
-    m_MaxAnimationSpeed: 1
+    m_MinAnimationSpeed: 3
+    m_MaxAnimationSpeed: 3
     m_PerlinScale: 0.5
     m_Output: 2
     m_ColliderType: 1
@@ -110,8 +110,8 @@ MonoBehaviour:
     - {fileID: 1827376072, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     - {fileID: 97393953, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     m_GameObject: {fileID: 0}
-    m_MinAnimationSpeed: 1
-    m_MaxAnimationSpeed: 1
+    m_MinAnimationSpeed: 3
+    m_MaxAnimationSpeed: 3
     m_PerlinScale: 0.5
     m_Output: 2
     m_ColliderType: 1
@@ -137,8 +137,8 @@ MonoBehaviour:
     - {fileID: 1815677354, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     - {fileID: 1920237858, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
     m_GameObject: {fileID: 0}
-    m_MinAnimationSpeed: 1
-    m_MaxAnimationSpeed: 1
+    m_MinAnimationSpeed: 3
+    m_MaxAnimationSpeed: 3
     m_PerlinScale: 0.5
     m_Output: 2
     m_ColliderType: 1
@@ -165,8 +165,8 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     m_GameObject: {fileID: 0}
-    m_MinAnimationSpeed: 1
-    m_MaxAnimationSpeed: 1
+    m_MinAnimationSpeed: 3
+    m_MaxAnimationSpeed: 3
     m_PerlinScale: 0.5
     m_Output: 2
     m_ColliderType: 1

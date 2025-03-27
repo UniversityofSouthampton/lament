@@ -3308,13 +3308,14 @@ MonoBehaviour:
   enemySound: {fileID: 2137646683}
   backgroundSound: {fileID: 1680601701}
   ambience: {fileID: 8300000, guid: 68026b5ef8613e6459e581f54165cf35, type: 3}
-  dash: {fileID: 8300000, guid: 520ee567bff5b1444907b5b9510591fd, type: 3}
-  playerhurt: {fileID: 8300000, guid: cbf91390a850ce74b9556525c1ac153b, type: 3}
+  dash: {fileID: 8300000, guid: a60de6d401906f14bb2033f6efa047a2, type: 3}
+  playerhurt: {fileID: 8300000, guid: 1a89e7585fe14c043ace843383d20476, type: 3}
   playerdeath: {fileID: 8300000, guid: bfc8e874163d6634f9ea85be5b0c8108, type: 3}
-  whisperhurt: {fileID: 8300000, guid: 266ad390aa665a34288ccc0a5f9f973d, type: 3}
-  whispershoot: {fileID: 8300000, guid: bb5eb91447b0ca6448ceba5ea4fa2f91, type: 3}
-  whispervoice: {fileID: 8300000, guid: e5e01fd45bd15a24abd6ea3a86af9aa3, type: 3}
-  whisperdeath: {fileID: 8300000, guid: e4e1df1293d5dd94e86919b79f228a39, type: 3}
+  playerattack: {fileID: 8300000, guid: dc0136dd5c71db849806c67ae73c256c, type: 3}
+  whisperhurt: {fileID: 8300000, guid: 64561fe64a2906c4ba44def6a73aef83, type: 3}
+  whispershoot: {fileID: 8300000, guid: 8471aea5780c47749b8fa9629db971ef, type: 3}
+  whispervoice: {fileID: 8300000, guid: ff1d4690ca7d95544b45d86c7f97bb49, type: 3}
+  whisperdeath: {fileID: 8300000, guid: 32f65dcd12f76494f9c3ae3ed5088e2b, type: 3}
 --- !u!4 &1537084380
 Transform:
   m_ObjectHideFlags: 0
@@ -3360,9 +3361,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5ae72eed11e211f468ce4ba395111630, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.727
   m_Pitch: 1
   Loop: 1
   Mute: 0
