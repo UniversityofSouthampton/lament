@@ -3,7 +3,18 @@ guid: 8f8021b47c3f99e478560bce8d7b2a20
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerSound: {instanceID: 0}
+  - enemySound: {instanceID: 0}
+  - backgroundSound: {instanceID: 0}
+  - ambience: {instanceID: 0}
+  - dash: {fileID: 8300000, guid: a60de6d401906f14bb2033f6efa047a2, type: 3}
+  - playerhurt: {fileID: 8300000, guid: 1a89e7585fe14c043ace843383d20476, type: 3}
+  - playerdeath: {fileID: 8300000, guid: 4f469f8a24c383f489092614560f8302, type: 3}
+  - whisperhurt: {fileID: 8300000, guid: 64561fe64a2906c4ba44def6a73aef83, type: 3}
+  - whispershoot: {fileID: 8300000, guid: b33684e2959406f44b987783a7a970c8, type: 3}
+  - whispervoice: {fileID: 8300000, guid: ff1d4690ca7d95544b45d86c7f97bb49, type: 3}
+  - whisperdeath: {fileID: 8300000, guid: 32f65dcd12f76494f9c3ae3ed5088e2b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -6,19 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemies/Enemy_Wrought.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemies/Enemy_Wrought.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/BR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/BR.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/L.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/L.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TBR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TBR.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/Whisper attack.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/Whisper attack.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/whisper death.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/whisper death.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/whisper hurt.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/whisper hurt.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/whisper voice.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/Whisper SFX/whisper voice.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/AudioManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/AudioManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1742815185564" duration="3417000" />
       <workItem from="1743017014778" duration="4492000" />
       <workItem from="1743029575658" duration="778000" />
-      <workItem from="1743070895862" duration="2748000" />
+      <workItem from="1743070895862" duration="4713000" />
     </task>
     <servers />
   </component>
