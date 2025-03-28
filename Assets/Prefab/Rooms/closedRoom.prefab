@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6239410811025035481}
   - component: {fileID: 1593989281128897872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 8211069616717872474}
   - component: {fileID: 6584728875927992421}
   - component: {fileID: 4254424607256824519}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2946,7 +2946,7 @@ GameObject:
   - component: {fileID: 3191050070126799014}
   - component: {fileID: 1432269696384227505}
   - component: {fileID: 232036883165726664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: closedRoom
   m_TagString: closedRoom
   m_Icon: {fileID: 0}

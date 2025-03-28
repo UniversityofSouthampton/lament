@@ -23,7 +23,7 @@ public class RoomManager : MonoBehaviour
 
     IEnumerator ActivateObject()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         ActivateObjects();
     }
 

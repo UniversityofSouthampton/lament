@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/L.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/L.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/LB.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/LB.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/LR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/LR.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TB.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TB.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TL.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TL.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TLB.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TLB.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/TLR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/TLR.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerNew.cs" afterDir="false" />
-    </list>
+    <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +117,7 @@
       <workItem from="1743029575658" duration="778000" />
       <workItem from="1743070895862" duration="7727000" />
       <workItem from="1743086444869" duration="5352000" />
-      <workItem from="1743179566104" duration="2412000" />
+      <workItem from="1743179566104" duration="3151000" />
     </task>
     <servers />
   </component>
