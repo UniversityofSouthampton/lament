@@ -28,7 +28,7 @@ public class PlayerControllerNew : MonoBehaviour
 
     [Header("Checks")]
     private Vector2 lastMoveDirection;
-    //public Transform Aim;
+    public Transform Aim;
     bool isWalking = false;
     public bool isFalling = false;
     
@@ -64,6 +64,7 @@ public class PlayerControllerNew : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canDash && !attackScript.isAttacking && !healthScript.isDead)
         {
             StartCoroutine(Dash());
+            Debug.Log("isdashing");
         }
 
         if(healthScript.isDead)
@@ -93,19 +94,19 @@ public class PlayerControllerNew : MonoBehaviour
         Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
-        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
+       // Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
         audioManager.PlaySfx(audioManager.dash);
         anim.SetBool("isDashing", true);
         tr.emitting = true;
-        //rb2d.isKinematic = true;
+       // rb2d.isKinematic = true;
         rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
         
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
-        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, false);
+      //  Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, false);
         anim.SetBool("isDashing", false);
         tr.emitting = false;
-        //rb2d.isKinematic = false;
+       // rb2d.isKinematic = false;
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
