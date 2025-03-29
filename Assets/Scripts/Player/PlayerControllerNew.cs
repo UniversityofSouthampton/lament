@@ -94,16 +94,24 @@ public class PlayerControllerNew : MonoBehaviour
         Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
-       // Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
+       Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
         audioManager.PlaySfx(audioManager.dash);
         anim.SetBool("isDashing", true);
         tr.emitting = true;
        // rb2d.isKinematic = true;
-        rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
+       //This hanndles the direction of the dash based on player's last movement
+       Vector2 dashDirection = lastMoveDirection;
+       if(isFacingLeft) dashDirection = Vector2.right;
+       else if(isFacingRight) dashDirection = Vector2.left;
+       else if(isFacingUp) dashDirection = Vector2.up;
+       else if(isFacingDown) dashDirection = Vector2.down;
+       
+       rb2d.velocity = dashDirection * dashSpeed;
+       //rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
         
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
-      //  Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, false);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, false);
         anim.SetBool("isDashing", false);
         tr.emitting = false;
        // rb2d.isKinematic = false;
