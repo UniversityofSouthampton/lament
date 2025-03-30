@@ -31,7 +31,9 @@ public class Enemy_Whisper : MonoBehaviour
     
     AudioManager audioManager;
     
+   //hasspawned bool for delaying activation and isbeingattacked delays shooting when they are attacked at the same speed as the attack animation
     private bool hasSpawned = false;
+    private bool isBeingAttacked = false;
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -97,7 +99,7 @@ public class Enemy_Whisper : MonoBehaviour
 
     void HandleProjectile()
     {
-        if(timeBetweenShots <= 0)
+        if(!isBeingAttacked && timeBetweenShots <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
@@ -112,6 +114,8 @@ public class Enemy_Whisper : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        isBeingAttacked = true;
+        StartCoroutine(ResetBeingAttacked());
         anim.SetTrigger("isHurt");
         audioManager.PlaySfx(audioManager.whisperhurt);
         Debug.Log("Whisper health is" + currentHealth);
@@ -122,6 +126,12 @@ public class Enemy_Whisper : MonoBehaviour
             audioManager.PlaySfx(audioManager.whisperdeath);
             StartCoroutine(DestroyEnemy());
             
+        }
+        IEnumerator ResetBeingAttacked()
+        {
+            
+            yield return new WaitForSeconds(1f); 
+            isBeingAttacked = false;
         }
     }
 
