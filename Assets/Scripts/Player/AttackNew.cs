@@ -11,9 +11,11 @@ public class AttackNew : MonoBehaviour
     public GameObject downMelee;
     public GameObject leftMelee;
     public GameObject rightMelee;
+    
     public float atkDuration = 0.6f;
     float atkTimer = 0f;
     public bool isAttacking = false;
+    private bool isAttackCanceled = false;
     Animator anim;
 
     void Start()
@@ -25,6 +27,11 @@ public class AttackNew : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space) && isAttacking)
+        {
+            CancelAttack();
+            return;
+        }
         CheckMeleeTimer();
 
         if(Input.GetMouseButton(0) && !isAttacking)
@@ -34,6 +41,20 @@ public class AttackNew : MonoBehaviour
             Debug.Log("player has used melee1");
         }
     }
+
+    void CancelAttack()
+    {
+        isAttacking = false;
+        isAttackCanceled = true;
+        anim.SetBool("isAttacking", false);
+        StopAllCoroutines();
+        
+        DeactivateHitbox(upMelee);
+        DeactivateHitbox(downMelee);
+        DeactivateHitbox(leftMelee);
+        DeactivateHitbox(rightMelee);
+    }
+    
 
     void HandleAttack()
     {
@@ -52,6 +73,7 @@ public class AttackNew : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             isAttacking = false;
             upMelee.SetActive(false);
+            
         }
         else if (playerControllerNew.isFacingDown)
         {
@@ -61,6 +83,7 @@ public class AttackNew : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             isAttacking = false;
             downMelee.SetActive(false);
+            
         }
         else if (playerControllerNew.isFacingLeft)
         {
@@ -70,6 +93,7 @@ public class AttackNew : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             isAttacking = false;
             leftMelee.SetActive(false);
+            
         }
         else if (playerControllerNew.isFacingRight)
         {
@@ -79,6 +103,31 @@ public class AttackNew : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             isAttacking = false;
             rightMelee.SetActive(false);
+            
+        }
+    }
+    private void ActivateHitbox(GameObject hitbox)
+    {
+        if (isAttackCanceled)
+        {
+            hitbox.SetActive(false); // Deactivate hitbox immediately if attack is canceled
+        }
+        else
+        {
+            hitbox.SetActive(true); // Activate hitbox
+        }
+    }
+
+    // Method to deactivate hitbox and check for cancellation
+    private void DeactivateHitbox(GameObject hitbox)
+    {
+        if (isAttackCanceled)
+        {
+            hitbox.SetActive(false); // Ensure the hitbox is deactivated
+        }
+        else
+        {
+            hitbox.SetActive(false); // Deactivate hitbox after attack
         }
     }
 
