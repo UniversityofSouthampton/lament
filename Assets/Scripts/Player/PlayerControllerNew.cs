@@ -64,12 +64,10 @@ public class PlayerControllerNew : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canDash && !attackScript.isAttacking && !healthScript.isDead)
         {
             Vector2 dashDirection = lastMoveDirection;
-                 if(moveInput is { x: > 0, y: 0 }) {dashDirection = Vector2.right;}
-            else if(moveInput is { x: < 0, y: 0 }) {dashDirection = Vector2.left;}
-            else if(moveInput is { x: 0, y: > 0 }) {dashDirection = Vector2.up;}
-            else if(moveInput is { x: 0, y: < 0 }) {dashDirection = Vector2.down;}
+            if (moveInput is { x: 0, y: 0 }) { dashDirection = lastMoveDirection;}
+            else {dashDirection = moveInput;}
             StartCoroutine(Dash(dashDirection));
-            Debug.Log("isdashing");
+            Debug.Log("isdashing, dir: " + dashDirection);
         }
 
         if(healthScript.isDead)
@@ -133,11 +131,11 @@ public class PlayerControllerNew : MonoBehaviour
             if((moveX == 0 && moveY == 0) && (moveInput.x !=0 || moveInput.y !=0))
             {
                 isWalking = false;
-                lastMoveDirection = moveInput;
             }
             else if (moveX != 0 || moveY != 0)
             {
                 isWalking = true;
+                lastMoveDirection = moveInput;
             }
             
 
