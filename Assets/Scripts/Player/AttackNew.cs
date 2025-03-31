@@ -17,7 +17,7 @@ public class AttackNew : MonoBehaviour
     public bool isAttacking = false;
     private bool isAttackCanceled = false;
     Animator anim;
-
+    
     void Start()
     {
         playerControllerNew = GetComponent<PlayerControllerNew>();
@@ -106,30 +106,32 @@ public class AttackNew : MonoBehaviour
             
         }
     }
+   
     private void ActivateHitbox(GameObject hitbox)
     {
         if (isAttackCanceled)
         {
-            hitbox.SetActive(false); // Deactivate hitbox immediately if attack is canceled
+            hitbox.SetActive(false); 
         }
         else
         {
-            hitbox.SetActive(true); // Activate hitbox
+            hitbox.SetActive(true); 
         }
     }
 
-    // Method to deactivate hitbox and check for cancellation
+    //this code is for cancelling the hitbox when dashing
     private void DeactivateHitbox(GameObject hitbox)
     {
         if (isAttackCanceled)
         {
-            hitbox.SetActive(false); // Ensure the hitbox is deactivated
+            hitbox.SetActive(false); 
         }
         else
         {
-            hitbox.SetActive(false); // Deactivate hitbox after attack
+            hitbox.SetActive(false); 
         }
     }
+    
 
     void CheckMeleeTimer()
     {
