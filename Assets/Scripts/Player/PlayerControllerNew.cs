@@ -63,7 +63,12 @@ public class PlayerControllerNew : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Space) && canDash && !attackScript.isAttacking && !healthScript.isDead)
         {
-            StartCoroutine(Dash());
+            Vector2 dashDirection = lastMoveDirection;
+                 if(moveInput is { x: > 0, y: 0 }) {dashDirection = Vector2.right;}
+            else if(moveInput is { x: < 0, y: 0 }) {dashDirection = Vector2.left;}
+            else if(moveInput is { x: 0, y: > 0 }) {dashDirection = Vector2.up;}
+            else if(moveInput is { x: 0, y: < 0 }) {dashDirection = Vector2.down;}
+            StartCoroutine(Dash(dashDirection));
             Debug.Log("isdashing");
         }
 
@@ -89,7 +94,7 @@ public class PlayerControllerNew : MonoBehaviour
         
 
     }
-    IEnumerator Dash()
+    IEnumerator Dash(Vector2 direction)
     {
         Debug.Log("Is Dashing");
         canDash = false;
@@ -100,13 +105,8 @@ public class PlayerControllerNew : MonoBehaviour
         tr.emitting = true;
        // rb2d.isKinematic = true;
        //This hanndles the direction of the dash based on player's last movement
-       Vector2 dashDirection = lastMoveDirection;
-       if(isFacingLeft) dashDirection = Vector2.right;
-       else if(isFacingRight) dashDirection = Vector2.left;
-       else if(isFacingUp) dashDirection = Vector2.up;
-       else if(isFacingDown) dashDirection = Vector2.down;
-       
-       rb2d.velocity = dashDirection * dashSpeed;
+
+       rb2d.velocity = direction * dashSpeed;
        //rb2d.velocity = new Vector2(moveInput.x * dashSpeed, moveInput.y * dashSpeed);
         
         yield return new WaitForSeconds(dashDuration);
@@ -122,7 +122,9 @@ public class PlayerControllerNew : MonoBehaviour
 
     void ProcessInputs()
     {
-
+        moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
+        
         if(!attackScript.isAttacking)
         {
             float moveX = Input.GetAxisRaw("Horizontal");
@@ -138,9 +140,6 @@ public class PlayerControllerNew : MonoBehaviour
                 isWalking = true;
             }
             
-            
-            moveInput.x = Input.GetAxisRaw("Horizontal");
-            moveInput.y = Input.GetAxisRaw("Vertical");
 
             moveInput.Normalize();
             rb2d.velocity = moveInput * activeMoveSpeed;            
