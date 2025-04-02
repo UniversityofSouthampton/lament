@@ -47,10 +47,10 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth <= 0 && !isDead)
             {
                 audioManager.PlaySfx(audioManager.playerdeath);
+                gameManager.gameOver();
                 anim.SetTrigger("isDead");
                 player.GetComponent<AttackNew>().enabled = false;
                 StartCoroutine(DestroyPlayer());
-                gameManager.gameOver();
             }
         }
         else

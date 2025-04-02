@@ -4030,7 +4030,7 @@ PrefabInstance:
       objectReference: {fileID: 1002450042}
     - target: {fileID: 5837494924873821041, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
       propertyPath: maxHealth
-      value: 99
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5837494924873821041, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
       propertyPath: gameManager

@@ -110,6 +110,7 @@ public class GameManagerScript : MonoBehaviour
     }
     IEnumerator DelayedDeathScreen()
     {
+        Debug.Log("Game over!");
         yield return new WaitForSeconds(1.2f);
         Time.timeScale = 0f;
         isGameOverScreenActive = true;
@@ -155,6 +156,7 @@ public class GameManagerScript : MonoBehaviour
     {
         //sends player back to main menu
         SceneManager.LoadScene("MainMenu");
+        setTimeScale();
     }
 
     public void quit()
