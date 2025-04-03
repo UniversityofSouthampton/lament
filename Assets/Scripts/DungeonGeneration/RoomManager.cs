@@ -15,9 +15,9 @@ public class RoomManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+            //enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
             StartCoroutine(ActivateObject());
-            Debug.Log("PLayer has entered the room!");
+            //Debug.Log("Player has entered the room!");
         }
     }
 
@@ -37,6 +37,7 @@ public class RoomManager : MonoBehaviour
     {
         if (enemies.Contains(enemy))
         {
+            Debug.Log("Enemy count: " + enemies.Count);
             enemies.Remove(enemy);
         }
 

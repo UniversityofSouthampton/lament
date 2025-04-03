@@ -67,7 +67,7 @@ public class PlayerControllerNew : MonoBehaviour
             if (moveInput is { x: 0, y: 0 }) { dashDirection = lastMoveDirection;}
             else {dashDirection = moveInput;}
             StartCoroutine(Dash(dashDirection));
-            Debug.Log("isdashing, dir: " + dashDirection);
+            //Debug.Log("isdashing, dir: " + dashDirection);
         }
 
         if(healthScript.isDead)
@@ -94,7 +94,7 @@ public class PlayerControllerNew : MonoBehaviour
     }
     IEnumerator Dash(Vector2 direction)
     {
-        Debug.Log("Is Dashing");
+        //Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);

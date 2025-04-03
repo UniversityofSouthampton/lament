@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
         {
             enemy = collision.gameObject.GetComponent<Enemy_Whisper>();
             enemyWrought = collision.gameObject.GetComponent<Enemy_Wrought>();
-            Debug.Log("Enemy  has taken damage!");
+            //Debug.Log("Enemy  has taken damage!");
            
             if (enemy is not null)
             {

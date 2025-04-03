@@ -118,7 +118,7 @@ public class Enemy_Whisper : MonoBehaviour
         StartCoroutine(ResetBeingAttacked());
         anim.SetTrigger("isHurt");
         audioManager.PlaySfx(audioManager.whisperhurt);
-        Debug.Log("Whisper health is" + currentHealth);
+        //Debug.Log("Whisper health is" + currentHealth);
         if(currentHealth <= 0)
         {
             roomManager.EnemyKilled(gameObject);
@@ -141,7 +141,7 @@ public class Enemy_Whisper : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         isDead = true;
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Whisper has been killed");
+        //Debug.Log("Whisper has been killed");
         Destroy(gameObject);
         Instantiate(TerraShard, transform.position, Quaternion.identity);
     }
