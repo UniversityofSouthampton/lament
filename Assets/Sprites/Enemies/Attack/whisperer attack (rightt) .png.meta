@@ -102,8 +102,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a436f651677392144b99bbc49e829b82
-      internalID: -1413952583
+      spriteID: 4fe4286167c463c40917b783f2f15fc9
+      internalID: -1174993891
       vertices: []
       indices: 
       edges: []
@@ -121,10 +121,10 @@ TextureImporter:
       name: whisperer attack (rightt) _1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 50
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76340029aa294284f93ab39e08bcab81
-      internalID: 542936666
+      spriteID: e2753649fe70d3c4eab5900f4df39b99
+      internalID: -1759557733
       vertices: []
       indices: 
       edges: []
@@ -142,10 +142,10 @@ TextureImporter:
       name: whisperer attack (rightt) _2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 100
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c3808a48b2349a408aef1162909658a
-      internalID: -476626016
+      spriteID: f4d833a2c3eff1543a742b87d6560b21
+      internalID: -291755971
       vertices: []
       indices: 
       edges: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: whisperer attack (rightt) _3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 150
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7218680505210804e84f6431d27289dc
-      internalID: -1058512128
+      spriteID: da03ca252c21068469a39341f6edb40a
+      internalID: 1016188842
       vertices: []
       indices: 
       edges: []
@@ -184,10 +184,10 @@ TextureImporter:
       name: whisperer attack (rightt) _4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 200
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e45766c10f9ce94f82e7a1dc17d33c0
-      internalID: 132930129
+      spriteID: 0cd42cf0fde521f40aff210c26e514a3
+      internalID: 738734837
       vertices: []
       indices: 
       edges: []
@@ -205,10 +205,10 @@ TextureImporter:
       name: whisperer attack (rightt) _5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 250
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a096229ee0f89049901845b01ffc5c3
-      internalID: 525618828
+      spriteID: 31149e02d1ccc244ebf2949c7836989e
+      internalID: -1536291413
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      whisperer attack (rightt) _0: -1413952583
-      whisperer attack (rightt) _1: 542936666
-      whisperer attack (rightt) _2: -476626016
-      whisperer attack (rightt) _3: -1058512128
-      whisperer attack (rightt) _4: 132930129
-      whisperer attack (rightt) _5: 525618828
+      whisperer attack (rightt) _0: -1174993891
+      whisperer attack (rightt) _1: -1759557733
+      whisperer attack (rightt) _2: -291755971
+      whisperer attack (rightt) _3: 1016188842
+      whisperer attack (rightt) _4: 738734837
+      whisperer attack (rightt) _5: -1536291413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

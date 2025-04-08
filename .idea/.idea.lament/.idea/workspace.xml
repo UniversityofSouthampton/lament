@@ -6,7 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Whispers/Enemy_Whisper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Back Attack Whisper.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Back Attack Whisper.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Front Attack Whisper.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Front Attack Whisper.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Left Attack Whisper.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Left Attack Whisper.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Right Attack Whisper.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Right Attack Whisper.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (down)) .png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (down)) .png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (down)) .png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (down)) .png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (leftt) .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (leftt) .png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (rightt) .png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (rightt) .png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (rightt) .png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (rightt) .png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (up)) .png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (up)) .png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (up)) .png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/whisperer attack (up)) .png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Hurt/wHurtUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +150,7 @@
       <workItem from="1743697043700" duration="783000" />
       <workItem from="1743777870810" duration="747000" />
       <workItem from="1743976348109" duration="2127000" />
+      <workItem from="1744132798356" duration="664000" />
     </task>
     <servers />
   </component>

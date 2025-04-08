@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c96b8c20b6ded9b469a66493ef797516
+guid: a123dff5aa0ee104294d5b422b9d95b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: whisperer attack (leftt) _0
+      name: whisperer attack (left)) _0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52bd54ca407664a4fbdeb7844b82789e
-      internalID: 529449010
+      spriteID: e798fa5cad2cdf246a9e83264e62c4d6
+      internalID: -1413846074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: whisperer attack (leftt) _1
+      name: whisperer attack (left)) _1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 50
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6531982ef18835045a366652473a48fa
-      internalID: -1787104452
+      spriteID: 2b63d81df118de0459cf294c29e5d988
+      internalID: 1166142374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: whisperer attack (leftt) _2
+      name: whisperer attack (left)) _2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 100
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eff393972f9f90b489d2d976db2e2444
-      internalID: -845121455
+      spriteID: 87e0cabed38ffef46bec637f397f56ee
+      internalID: -2124412936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: whisperer attack (leftt) _3
+      name: whisperer attack (left)) _3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 150
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 095f6c6d3f8402245a152d28eb144fda
-      internalID: -805570236
+      spriteID: 19fdcb9208e7ed4448c8b5aed204516f
+      internalID: 1643337268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: whisperer attack (leftt) _4
+      name: whisperer attack (left)) _4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 200
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13cf916729ec4584e9fd83470707f3a1
-      internalID: 567298921
+      spriteID: 776c12179250ce9448a4183de1d6e88c
+      internalID: 1846494136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: whisperer attack (leftt) _5
+      name: whisperer attack (left)) _5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 250
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a54b0f7598f614e96e3e8db8f03230
-      internalID: 1060235416
+      spriteID: 9d3b3a47e9b69d24ba34b6dced309af3
+      internalID: 2056323642
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      whisperer attack (leftt) _0: 529449010
-      whisperer attack (leftt) _1: -1787104452
-      whisperer attack (leftt) _2: -845121455
-      whisperer attack (leftt) _3: -805570236
-      whisperer attack (leftt) _4: 567298921
-      whisperer attack (leftt) _5: 1060235416
+      whisperer attack (left)) _0: -1413846074
+      whisperer attack (left)) _1: 1166142374
+      whisperer attack (left)) _2: -2124412936
+      whisperer attack (left)) _3: 1643337268
+      whisperer attack (left)) _4: 1846494136
+      whisperer attack (left)) _5: 2056323642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
