@@ -21,7 +21,6 @@ public class Enemy_Wrought : MonoBehaviour
 
     [Header("References")]
     public GameObject Attack_Wrought;
-    public Transform Sprite_Wrought;
     private Transform player;
     private Coroutine currentCoroutine;
 
@@ -51,15 +50,7 @@ public class Enemy_Wrought : MonoBehaviour
 
         HandleMovement();
         HandleAttack();
-        HandleLook();
-    }
-
-    void LateUpdate()
-    {
-        if (Sprite_Wrought != null)
-        {
-            Sprite_Wrought.rotation = transform.rotation * Quaternion.Inverse(transform.rotation);
-        }
+        //HandleLook();
     }
 
     void HandleMovement()
@@ -131,7 +122,7 @@ public class Enemy_Wrought : MonoBehaviour
         }
 
         // Wait for the specified duration
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
 
         // Deactivate the attack object
         if (Attack_Wrought != null)
@@ -147,9 +138,9 @@ public class Enemy_Wrought : MonoBehaviour
         anim.SetTrigger("isHurt");
         if(currentHealth <= 0)
         {
-            roomManager.EnemyKilled(gameObject);
             anim.SetTrigger("isDead");
             StartCoroutine(DestroyEnemy());
+            roomManager.EnemyKilled(gameObject);
         }
     }
     private IEnumerator DestroyEnemy()

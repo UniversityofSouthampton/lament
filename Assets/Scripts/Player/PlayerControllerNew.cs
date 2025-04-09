@@ -36,7 +36,7 @@ public class PlayerControllerNew : MonoBehaviour
     public bool isFacingLeft = false;
     public bool isFacingRight = false;
     public bool isFacingUp = false;
-    public bool isFacingDown = true;
+    public bool isFacingDown = false;
     [SerializeField] private TrailRenderer tr;
 
     AudioManager audioManager;
