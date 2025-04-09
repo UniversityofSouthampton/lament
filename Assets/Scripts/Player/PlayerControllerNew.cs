@@ -36,7 +36,7 @@ public class PlayerControllerNew : MonoBehaviour
     public bool isFacingLeft = false;
     public bool isFacingRight = false;
     public bool isFacingUp = false;
-    public bool isFacingDown = false;
+    public bool isFacingDown = true;
     [SerializeField] private TrailRenderer tr;
 
     AudioManager audioManager;
@@ -45,12 +45,13 @@ public class PlayerControllerNew : MonoBehaviour
     {
         pitFallLayer = LayerMask.NameToLayer("PlayerCanDashOver");
 
+        isFacingDown = true;
         canDash = true;
         anim = GetComponent<Animator>();
         activeMoveSpeed = moveSpeed;
         attackScript = GetComponent<AttackNew>();
         healthScript = GetComponent<PlayerHealth>();
-      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()
