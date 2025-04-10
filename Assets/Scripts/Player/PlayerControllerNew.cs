@@ -98,7 +98,7 @@ public class PlayerControllerNew : MonoBehaviour
         //Debug.Log("Is Dashing");
         canDash = false;
         isDashing = true;
-       Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, pitFallLayer, true);
         audioManager.PlaySfx(audioManager.dash);
         anim.SetBool("isDashing", true);
         tr.emitting = true;
