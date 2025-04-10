@@ -1946,6 +1946,8 @@ MonoBehaviour:
   whispershoot: {fileID: 8300000, guid: b33684e2959406f44b987783a7a970c8, type: 3}
   whispervoice: {fileID: 8300000, guid: ff1d4690ca7d95544b45d86c7f97bb49, type: 3}
   whisperdeath: {fileID: 8300000, guid: 32f65dcd12f76494f9c3ae3ed5088e2b, type: 3}
+  teraPickup: {fileID: 0}
+  heal: {fileID: 0}
 --- !u!4 &210609387
 Transform:
   m_ObjectHideFlags: 0

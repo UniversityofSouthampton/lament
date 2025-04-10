@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: c277bca3e2494fc4fb96e9c0d8586005
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 4, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae663815899f2bc46ace0c22db92287a
+      internalID: 1655757369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055c02db03921c34ab1485740272930b
+      internalID: 1433299826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae22d9d67416e64e98f7a44f485ca12
+      internalID: 1746048143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e02778e3f82de42ae1bbf2f2ccc714
+      internalID: 1122401398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7290ec35a07fd743b40ae1561b4da15
+      internalID: -215530578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5708ae61b94c2c44a9728f3ac9ddbe21
+      internalID: 518875012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac0a227f60f6a345b1d5ebc843c7fb7
+      internalID: -1527155190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart potion anim sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 9
+        width: 288
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ce40297763c584cbbe82a218a7143d
+      internalID: 422421175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      heart potion anim sprite sheet_0: 128247139
+      heart potion anim sprite sheet_1: -1453376926
+      heart potion anim sprite sheet_10: 441356788
+      heart potion anim sprite sheet_11: -215530578
+      heart potion anim sprite sheet_12: -666432734
+      heart potion anim sprite sheet_13: 1716694681
+      heart potion anim sprite sheet_14: 518875012
+      heart potion anim sprite sheet_15: -1066582077
+      heart potion anim sprite sheet_16: -1527155190
+      heart potion anim sprite sheet_17: 1238973829
+      heart potion anim sprite sheet_18: 422421175
+      heart potion anim sprite sheet_19: 1524739885
+      heart potion anim sprite sheet_2: 2126396680
+      heart potion anim sprite sheet_20: -218906021
+      heart potion anim sprite sheet_21: -2001534366
+      heart potion anim sprite sheet_22: -1096591570
+      heart potion anim sprite sheet_3: 1655757369
+      heart potion anim sprite sheet_4: 2121994959
+      heart potion anim sprite sheet_5: 1433299826
+      heart potion anim sprite sheet_6: 1746048143
+      heart potion anim sprite sheet_7: 426943021
+      heart potion anim sprite sheet_8: 1122401398
+      heart potion anim sprite sheet_9: -1298511652
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
