@@ -19,6 +19,8 @@ public class AudioManager : MonoBehaviour
    public AudioClip whispershoot;   
    public AudioClip whispervoice;
    public AudioClip whisperdeath;
+   public AudioClip teraPickup;
+   public AudioClip heal;
 
     private void Start()
    {

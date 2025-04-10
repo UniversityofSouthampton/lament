@@ -7,12 +7,13 @@ public class TerraShards : MonoBehaviour
     public int pickupTerraShards;
     public bool canPickUp = false;
     private GameObject player;
-
+    AudioManager audioManager;
 
     void Start()
     {
         pickupTerraShards = Random.Range(1, 5);
         player = GameObject.FindGameObjectWithTag("Player");
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         //StartCoroutine(PickUp());
     }
 
@@ -27,7 +28,7 @@ public class TerraShards : MonoBehaviour
         {
             other.GetComponent<PlayerInventory>().takeTerraShards(pickupTerraShards);
             Destroy(gameObject);
+            audioManager.PlaySfx(audioManager.teraPickup);
         }
     }
-
 }

@@ -7,10 +7,11 @@ public class HealthPickup : MonoBehaviour
     PlayerHealth playerHealth;
 
     public float healthAddition = 2f;
-
+    AudioManager audioManager;
     void Awake()
     {
         playerHealth = FindAnyObjectByType<PlayerHealth>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,6 +21,7 @@ public class HealthPickup : MonoBehaviour
             if (playerHealth.currentHealth < playerHealth.maxHealth)
             {
                 Destroy(gameObject);
+                audioManager.PlaySfx(audioManager.heal);
                 if (playerHealth.currentHealth == 4f)
                 {
                     playerHealth.currentHealth = playerHealth.currentHealth + 1;
