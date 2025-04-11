@@ -30,7 +30,8 @@ public class Enemy_Whisper : MonoBehaviour
     private float velocityY;
     
     AudioManager audioManager;
-    
+    private AudioSource voiceSource;
+
    //hasspawned bool for delaying activation and isbeingattacked delays shooting when they are attacked at the same speed as the attack animation
     private bool hasSpawned = false;
     private bool isBeingAttacked = false;
@@ -45,7 +46,10 @@ public class Enemy_Whisper : MonoBehaviour
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
-        audioManager.PlaySfx(audioManager.whispervoice);
+        voiceSource = gameObject.AddComponent<AudioSource>();
+        voiceSource.clip = audioManager.whispervoice;
+        voiceSource.loop = true;
+        voiceSource.Play();
 
     }
 
@@ -145,6 +149,7 @@ public class Enemy_Whisper : MonoBehaviour
         //Debug.Log("Whisper has been killed");
         Destroy(gameObject);
         Instantiate(TerraShard, transform.position, Quaternion.identity);
+        voiceSource.Stop();
     }
     
     void Animate()
