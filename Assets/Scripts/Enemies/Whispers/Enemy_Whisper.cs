@@ -28,6 +28,7 @@ public class Enemy_Whisper : MonoBehaviour
     private Rigidbody2D rb2d;
     private float velocityX;
     private float velocityY;
+    private DamageFlash damageFlash;
     
     AudioManager audioManager;
     private AudioSource voiceSource;
@@ -49,8 +50,9 @@ public class Enemy_Whisper : MonoBehaviour
         voiceSource = gameObject.AddComponent<AudioSource>();
         voiceSource.clip = audioManager.whispervoice;
         voiceSource.loop = true;
-        voiceSource.Play();
-
+        voiceSource.Play(); 
+        
+        damageFlash = GetComponent<DamageFlash>();
     }
 
     private void OnEnable()
@@ -122,6 +124,7 @@ public class Enemy_Whisper : MonoBehaviour
         isBeingAttacked = true;
         StartCoroutine(ResetBeingAttacked());
         anim.SetTrigger("isHurt");
+        damageFlash.CallDMGFlash();
         audioManager.PlaySfx(audioManager.whisperhurt);
         //Debug.Log("Whisper health is" + currentHealth);
         if(currentHealth <= 0)

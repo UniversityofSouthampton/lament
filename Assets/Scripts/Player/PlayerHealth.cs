@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     public float dmgMultiplier = 1;
     public GameObject player;
     Animator anim;
+    private DamageFlash damageFlash;
     AudioManager audioManager;
 
     public SpriteRenderer playerSr;
@@ -32,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         anim = GetComponent<Animator>();
         player.GetComponent<AttackNew>().enabled = true;
+        damageFlash = GetComponent<DamageFlash>();
     }
 
     public void TakeDamage(int damage)
@@ -43,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
             //Debug.Log("Player health: " + currentHealth);
             audioManager.PlaySfx(audioManager.playerhurt);
             anim.SetTrigger("isHurt");
+            damageFlash.CallDMGFlash();
 
             if (currentHealth <= 0 && !isDead)
             {
