@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 360b95a187a394d4189795d666e541f7
+guid: 2f9afa5e27112fd49b4f677d012abb9a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Psygen DEMO
+  - CutePixel
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
