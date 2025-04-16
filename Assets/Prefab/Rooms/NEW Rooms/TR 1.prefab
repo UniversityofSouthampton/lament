@@ -897,7 +897,7 @@ Tilemap:
       - {fileID: 1485383512, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
       - {fileID: 2096888408, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
       - {fileID: -30152753, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 6, y: -3, z: 0}
@@ -972,7 +972,7 @@ Tilemap:
       - {fileID: 489377603, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: -132773367, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 207145015, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: -2, z: 0}
@@ -1062,7 +1062,7 @@ Tilemap:
       - {fileID: -1554645017, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 588633865, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 20536032, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -4, y: 0, z: 0}
@@ -1107,7 +1107,7 @@ Tilemap:
       - {fileID: -1279845803, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 2024519584, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 2040344015, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 2, z: 0}
@@ -1167,7 +1167,7 @@ Tilemap:
       - {fileID: -372787957, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
       - {fileID: 0}
       - {fileID: 0}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 3, z: 0}
@@ -2506,7 +2506,7 @@ Tilemap:
       - {fileID: -1770131094, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
       - {fileID: -1689624749, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
       - {fileID: 1401757094, guid: 8a65453e7a0596d4d809bd0080efa990, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 5, y: -1, z: 0}
@@ -8296,7 +8296,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 5.5
+    OrthographicSize: 5.64
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

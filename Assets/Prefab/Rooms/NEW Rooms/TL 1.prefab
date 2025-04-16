@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 5.5
+    OrthographicSize: 5.64
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -2612,7 +2612,7 @@ Tilemap:
       - {fileID: 480092148, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 888919081, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: -1887059698, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: -2, z: 0}
@@ -2822,7 +2822,7 @@ Tilemap:
       - {fileID: 1705782536, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
       - {fileID: 1815677354, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
       - {fileID: 1920237858, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: 1, z: 0}
@@ -2837,7 +2837,7 @@ Tilemap:
       - {fileID: -372787957, guid: 3a6386911a4f5664fb07394e44cbc9c0, type: 3}
       - {fileID: 0}
       - {fileID: 0}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: 2, z: 0}

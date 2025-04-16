@@ -4039,7 +4039,7 @@ Tilemap:
       - {fileID: 2043420401, guid: cc3b3013ffa571f45ac629e7d7784511, type: 3}
       - {fileID: 1188217141, guid: cc3b3013ffa571f45ac629e7d7784511, type: 3}
       - {fileID: 1486503658, guid: cc3b3013ffa571f45ac629e7d7784511, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 5, y: -1, z: 0}
@@ -7791,7 +7791,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 5.5
+    OrthographicSize: 5.64
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
