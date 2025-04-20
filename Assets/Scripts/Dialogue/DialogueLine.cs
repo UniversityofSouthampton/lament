@@ -18,7 +18,7 @@ namespace DialogueSystem
         [Header("Sound")]
         [SerializeField] private AudioClip sound;
 
-        private bool continueToNextLine = false;
+        //private bool continueToNextLine = false;
         private void Awake()
         {
             textHolder = GetComponent<TMP_Text>();
@@ -28,10 +28,11 @@ namespace DialogueSystem
         {
             StartCoroutine(WriteText(input, textHolder, delay, sound, delayBetweenLines));
         }
-        public void ContinueDialogue()
+        
+        /*public void ContinueDialogue()
         {
             continueToNextLine = true;
-        }
+        }*/
     }
 }
 

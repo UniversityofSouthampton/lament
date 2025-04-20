@@ -219,4 +219,9 @@ public class PlayerControllerNew : MonoBehaviour
             anim.SetFloat("isAttacking 1", 0.5f);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.gameObject.GetComponent<ActivateDialogue>().ActivateText();
+    }
 }
