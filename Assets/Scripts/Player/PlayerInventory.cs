@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public int currentTerraShards;
-    public TerrashardCounter cm;
-    // Start is called before the first frame update
+    //public TerrashardCounter cm;
+
     void Start()
     {
-        currentTerraShards = 0;
+        currentTerraShards = 10;
     }
 
     // Update is called once per frame
