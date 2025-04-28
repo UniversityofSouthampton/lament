@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
 
     [Header("Health Stats")]
 
-    public float maxHealth = 5;
+    public float maxHealth;
     public float currentHealth;
     public float iFrames = 0.5f;
     public bool isDead = false;
@@ -28,12 +28,18 @@ public class PlayerHealth : MonoBehaviour
 
     public void Start()
     {
+        if(PlayerStatsManager.Instance != null)
+        {
+            maxHealth = PlayerStatsManager.Instance.maxHealth;
+        }
+
         currentHealth = maxHealth;
         playerController = GetComponent<PlayerControllerNew>(); 
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         anim = GetComponent<Animator>();
         player.GetComponent<AttackNew>().enabled = true;
         damageFlash = GetComponent<DamageFlash>();
+
     }
 
     public void TakeDamage(int damage)
@@ -41,6 +47,7 @@ public class PlayerHealth : MonoBehaviour
         if (!playerController.isDashing && canTakeDamage)
         {
             currentHealth -= damage;
+            PlayerStatsManager.Instance.currentHealth -= damage;
             StartCoroutine(IsDamaged());
             //Debug.Log("Player health: " + currentHealth);
             audioManager.PlaySfx(audioManager.playerhurt);

@@ -1048,7 +1048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &333625405
 Transform:
   m_ObjectHideFlags: 0
@@ -1889,7 +1889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &474909378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,6 +2057,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7590115963827699569, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
   m_PrefabInstance: {fileID: 637904581}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &486445499 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5793127380532697116, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
+  m_PrefabInstance: {fileID: 637904581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486445497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d261007bbb68f84198700e01fe43467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &486445500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486445497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cd73e91c8bf144abb6da2b9686e591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  maxHealth: 0
+  emptyHeart: {fileID: 21300000, guid: ab89a4b77879121449c486e7f253c985, type: 3}
+  fullHeart: {fileID: 21300000, guid: ec30de1a1b8c6294fa167f32bb77b68b, type: 3}
+  hearts:
+  - {fileID: 8055297512792078879}
+  - {fileID: 7383565135424973251}
+  - {fileID: 1033160119771016087}
+  - {fileID: 6613918912599338112}
+  - {fileID: 8607245983890873078}
 --- !u!1 &497995650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2382,10 @@ PrefabInstance:
       propertyPath: currentTerraShards
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5837494924873821041, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7456424470877298681, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2396,7 +2433,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7590115963827699569, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 486445500}
   m_SourcePrefab: {fileID: 100100000, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
 --- !u!1 &646852623
 GameObject:
@@ -2690,7 +2730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3315,6 +3355,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c9c466b82b8a294ba84b9d47fd36099, type: 3}
+--- !u!1001 &773540951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3898362611239592347, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_Name
+      value: PlayerStatsManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620124077530581753, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841503091143511532, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: currentTerraShards
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
 --- !u!1001 &787885984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9670,6 +9771,7 @@ GameObject:
   - component: {fileID: 1809814385}
   - component: {fileID: 1809814384}
   - component: {fileID: 1809814383}
+  - component: {fileID: 1809814388}
   m_Layer: 0
   m_Name: SkillsCanvas
   m_TagString: Untagged
@@ -9802,6 +9904,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1809814388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809814381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ee37caf032a324ca90553c846b5411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillSO: {fileID: 0}
 --- !u!1 &1813339054
 GameObject:
   m_ObjectHideFlags: 0
@@ -10036,6 +10151,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1871006552
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5460709333654043518, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_Name
+      value: TerraShards
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.3293157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.30986047
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176102005682658501, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
 --- !u!1001 &1917042672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11580,7 +11752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TerrashardCount: {fileID: 7421260932235036071}
-  playerInventory: {fileID: 0}
+  playerInventory: {fileID: 486445499}
 --- !u!224 &3202646980002101580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12662,6 +12834,8 @@ SceneRoots:
   - {fileID: 203122851}
   - {fileID: 1356454500}
   - {fileID: 1813339056}
-  - {fileID: 1447645196}
-  - {fileID: 637904581}
   - {fileID: 333625405}
+  - {fileID: 773540951}
+  - {fileID: 637904581}
+  - {fileID: 1447645196}
+  - {fileID: 1871006552}

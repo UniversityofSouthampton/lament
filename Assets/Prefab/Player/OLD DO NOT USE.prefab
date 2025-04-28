@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 1737173419018358871}
   - component: {fileID: 8267432962834835144}
   m_Layer: 6
-  m_Name: Player
+  m_Name: OLD DO NOT USE
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -654,7 +654,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  iFrames: 0.5
+  isDead: 0
   dmgMultiplier: 1
+  player: {fileID: 0}
+  playerSr: {fileID: 0}
+  playerMovement: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &9133018035892419082
 GameObject:
   m_ObjectHideFlags: 0

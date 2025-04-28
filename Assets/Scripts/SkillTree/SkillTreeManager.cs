@@ -28,9 +28,7 @@ public class SkillTreeManager : MonoBehaviour
 
     private void Start()
     {
-        playerInventory = player.GetComponent<PlayerInventory>();
-        availablePoints = playerInventory.currentTerraShards;
-
+        availablePoints = PlayerStatsManager.Instance.currentTerraShards;
         foreach (SkillSlot slot in skillSlots)
         {
             slot.skillButton.onClick.AddListener(() => CheckAvailablePoints(slot));
@@ -49,8 +47,10 @@ public class SkillTreeManager : MonoBehaviour
 
     public void Update()
     {
-        availablePoints = playerInventory.currentTerraShards;
+        availablePoints = PlayerStatsManager.Instance.currentTerraShards;
     }
+
+
 
     private void HandleAbilityPointsSpent(SkillSlot skillSlot)
     {
@@ -74,8 +74,8 @@ public class SkillTreeManager : MonoBehaviour
 
     public void UpdateAbilityPoints(int amount)
     {
-        playerInventory.currentTerraShards += amount;
-        pointsText.text = playerInventory.currentTerraShards.ToString();
+        PlayerStatsManager.Instance.currentTerraShards += amount;
+        pointsText.text = PlayerStatsManager.Instance.currentTerraShards.ToString();
         Debug.Log("Decreased ability points");
     }
 }

@@ -13,14 +13,13 @@ public class HeartDisplay: MonoBehaviour
     public Sprite fullHeart;
     public Image[] hearts;
 
-    public PlayerHealth playerHealth;
 
 
     // Update is called once per frame
     void Update()
     {
-        health = (int)playerHealth.currentHealth;
-        maxHealth = (int)playerHealth.maxHealth;
+        health = (int)PlayerStatsManager.Instance.currentHealth;
+        maxHealth = (int)PlayerStatsManager.Instance.maxHealth;
 
        foreach (Image img in hearts)
         {

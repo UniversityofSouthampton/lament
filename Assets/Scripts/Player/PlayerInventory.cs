@@ -12,10 +12,10 @@ public class PlayerInventory : MonoBehaviour
         currentTerraShards = 10;
     }
 
-    // Update is called once per frame
+
     public void takeTerraShards(int pickupTerraShards)
     {
         currentTerraShards += pickupTerraShards;
-        Debug.Log("Current terra shards:" + currentTerraShards);
+        //Debug.Log("Current terra shards:" + currentTerraShards);
     }
 }

@@ -6,11 +6,10 @@ public class HealthPickup : MonoBehaviour
 {
     PlayerHealth playerHealth;
 
-    public float healthAddition = 2f;
+    public int healthAddition = 2;
     AudioManager audioManager;
     void Awake()
     {
-        playerHealth = FindAnyObjectByType<PlayerHealth>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
@@ -18,17 +17,17 @@ public class HealthPickup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (playerHealth.currentHealth < playerHealth.maxHealth)
+            if (PlayerStatsManager.Instance.currentHealth < PlayerStatsManager.Instance.maxHealth)
             {
                 Destroy(gameObject);
                 audioManager.PlaySfx(audioManager.heal);
-                if (playerHealth.currentHealth == 4f)
+                if (PlayerStatsManager.Instance.currentHealth == PlayerStatsManager.Instance.maxHealth - 1)
                 {
-                    playerHealth.currentHealth = playerHealth.currentHealth + 1;
+                    PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.currentHealth + 1;
                 }
                 else
                 {
-                    playerHealth.currentHealth = playerHealth.currentHealth + healthAddition;
+                    PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.currentHealth + healthAddition;
                 }
             }
         }

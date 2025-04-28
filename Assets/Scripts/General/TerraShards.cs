@@ -12,7 +12,6 @@ public class TerraShards : MonoBehaviour
     void Start()
     {
         pickupTerraShards = Random.Range(1, 5);
-        player = GameObject.FindGameObjectWithTag("Player");
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         //StartCoroutine(PickUp());
     }
@@ -26,7 +25,7 @@ public class TerraShards : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerInventory>().takeTerraShards(pickupTerraShards);
+            PlayerStatsManager.Instance.takeTerraShards(pickupTerraShards);
             Destroy(gameObject);
             audioManager.PlaySfx(audioManager.teraPickup);
         }
