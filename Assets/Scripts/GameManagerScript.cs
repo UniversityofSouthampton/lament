@@ -66,7 +66,7 @@ public class GameManagerScript : MonoBehaviour
         {
             //setTimeScale();
             isGameOverScreenActive = false;
-            Cursor.visible = false;
+            //Cursor.visible = false;
             startEnemies();
         }
     }
