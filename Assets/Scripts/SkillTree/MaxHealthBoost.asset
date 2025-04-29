@@ -15,3 +15,4 @@ MonoBehaviour:
   skillName: Max Health Boost
   maxLevel: 4
   skillIcon: {fileID: 21300000, guid: eb29ea834fad75742b0e4d146244d0b6, type: 3}
+  totalCost: 4
