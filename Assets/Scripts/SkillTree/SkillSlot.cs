@@ -34,7 +34,7 @@ public class SkillSlot : MonoBehaviour
     {
         if(isUnlocked && currentLevel < skillSO.maxLevel)
         {
-            currentLevel++;
+            currentLevel += skillSO.totalCost;
             OnAbilityPointSpent?.Invoke(this);
 
             if(currentLevel >= skillSO.maxLevel)

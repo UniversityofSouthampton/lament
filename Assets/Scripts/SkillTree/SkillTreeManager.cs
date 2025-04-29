@@ -5,13 +5,29 @@ using UnityEngine;
 
 public class SkillTreeManager : MonoBehaviour
 {
-
+    public static SkillTreeManager Instance;
+    
+    
     public SkillSlot[] skillSlots;
     public TMP_Text pointsText;
     [SerializeField] int availablePoints;
 
     public GameObject player;
     private PlayerInventory playerInventory;
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void OnEnable()
     {
@@ -38,7 +54,7 @@ public class SkillTreeManager : MonoBehaviour
 
     private void CheckAvailablePoints(SkillSlot slot)
     {
-        if(availablePoints > 0)
+        if(availablePoints > slot.skillSO.totalCost)
         {
             slot.TryUpgradeSkill();
         }
@@ -54,9 +70,9 @@ public class SkillTreeManager : MonoBehaviour
 
     private void HandleAbilityPointsSpent(SkillSlot skillSlot)
     {
-        if(availablePoints > 0)
+        if(availablePoints > skillSlot.skillSO.totalCost)
         {
-            UpdateAbilityPoints(-1);
+            UpdateAbilityPoints(-skillSlot.skillSO.totalCost);
         }
     }
 
