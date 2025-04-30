@@ -7,6 +7,8 @@ public class PlayerStatsManager : MonoBehaviour
 
     public static PlayerStatsManager Instance;
 
+    public GameObject player;
+
     [Header("Player Stats")]
     public int currentHealth = 3;
     public int maxHealth = 3;
@@ -31,6 +33,11 @@ public class PlayerStatsManager : MonoBehaviour
             Debug.Log("Destroying duplicate PlayerStatsManager");
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()

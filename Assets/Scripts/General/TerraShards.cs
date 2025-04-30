@@ -26,6 +26,7 @@ public class TerraShards : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             PlayerStatsManager.Instance.takeTerraShards(pickupTerraShards);
+            other.GetComponent<PlayerInventory>().takeTerraShards(pickupTerraShards);
             Destroy(gameObject);
             audioManager.PlaySfx(audioManager.teraPickup);
         }
