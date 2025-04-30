@@ -35,7 +35,8 @@ public class Enemy_Wrought : MonoBehaviour
     private DamageFlash damageFlash;
     
     AudioManager audioManager;
-
+    
+    private bool hasSpawned = false;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -45,6 +46,16 @@ public class Enemy_Wrought : MonoBehaviour
         isAttacking = false;
         
         damageFlash = GetComponent<DamageFlash>();
+    }
+    private void OnEnable()
+    {
+        StartCoroutine(Spawn());
+    }
+
+    IEnumerator Spawn()
+    {
+        yield return new WaitForSeconds(1f);
+        hasSpawned = true;
     }
 
     void Update()
