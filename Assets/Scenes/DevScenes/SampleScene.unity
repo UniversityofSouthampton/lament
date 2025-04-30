@@ -1528,6 +1528,8 @@ MonoBehaviour:
   whispershoot: {fileID: 8300000, guid: bb5eb91447b0ca6448ceba5ea4fa2f91, type: 3}
   whispervoice: {fileID: 8300000, guid: e5e01fd45bd15a24abd6ea3a86af9aa3, type: 3}
   whisperdeath: {fileID: 8300000, guid: e4e1df1293d5dd94e86919b79f228a39, type: 3}
+  teraPickup: {fileID: 0}
+  heal: {fileID: 0}
 --- !u!4 &719175137
 Transform:
   m_ObjectHideFlags: 0
@@ -2975,6 +2977,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285636089}
   m_CullTransparentMesh: 1
+--- !u!1 &1299507638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7590115963827699569, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
+  m_PrefabInstance: {fileID: 1839849100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1299507649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299507638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54efa08027195204ab6e4a4d27f1971d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.25
 --- !u!1001 &1390407570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2983,6 +3004,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1379485705825934361, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1569664471, guid: 355cb5d3b37822b4fb227121d59c039f, type: 3}
     - target: {fileID: 1379485705825934361, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2995,6 +3020,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1379485705825934361, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d50d09fdd14318d4da823466a642e3b4, type: 2}
     - target: {fileID: 3569401363343450182, guid: 3e57cc5ba5172884c85e2c40a812c145, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.2
@@ -4381,7 +4410,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7590115963827699569, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299507649}
   m_SourcePrefab: {fileID: 100100000, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
 --- !u!1 &1946347790
 GameObject:

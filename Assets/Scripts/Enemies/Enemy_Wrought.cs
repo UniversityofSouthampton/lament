@@ -32,6 +32,7 @@ public class Enemy_Wrought : MonoBehaviour
     private Rigidbody2D rb2d;
     private float velocityX;
     private float velocityY;
+    private DamageFlash damageFlash;
     
     AudioManager audioManager;
 
@@ -42,6 +43,8 @@ public class Enemy_Wrought : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         isAttacking = false;
+        
+        damageFlash = GetComponent<DamageFlash>();
     }
 
     void Update()
@@ -119,6 +122,7 @@ public class Enemy_Wrought : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             Attack_Wrought.SetActive(true);
+            anim.SetTrigger("isAttacking");
         }
 
         // Wait for the specified duration
@@ -136,6 +140,7 @@ public class Enemy_Wrought : MonoBehaviour
     {
         currentHealth -= damage;
         anim.SetTrigger("isHurt");
+        damageFlash.CallDMGFlash();
         if(currentHealth <= 0)
         {
             anim.SetTrigger("isDead");
