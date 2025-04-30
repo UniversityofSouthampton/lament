@@ -8,7 +8,7 @@ public class PlayerControllerNew : MonoBehaviour
     [Header("Movement")]
     private AttackNew attackScript;
     private PlayerHealth healthScript;
-    public float moveSpeed = 5f;
+    public float moveSpeed = 1f;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
 
@@ -57,6 +57,8 @@ public class PlayerControllerNew : MonoBehaviour
     void Update()
     {
         Animate();
+
+        moveSpeed = PlayerStatsManager.Instance.moveSpeed;
         
         if (isDashing && healthScript.isDead)
         {
@@ -141,7 +143,7 @@ public class PlayerControllerNew : MonoBehaviour
             
 
             moveInput.Normalize();
-            rb2d.velocity = moveInput * activeMoveSpeed;            
+            rb2d.velocity = moveInput * activeMoveSpeed * PlayerStatsManager.Instance.moveSpeed;            
         }
 
         //Handle facing direction

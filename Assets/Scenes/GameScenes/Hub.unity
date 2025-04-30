@@ -3413,8 +3413,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841503091143511532, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841503091143511532, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
       propertyPath: currentTerraShards
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7627,7 +7631,7 @@ PrefabInstance:
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 5b4c47105b4437843b87cb423af99195, type: 2}
+      objectReference: {fileID: 11400000, guid: 2eb268bb0f39a6a4cb02ef2947efc643, type: 2}
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: isUnlocked
       value: 0
@@ -12591,7 +12595,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.14224245, y: 0, z: -1.2690544, w: 0}
+  m_margin: {x: 0.14224245, y: 0, z: -65.955215, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -30,6 +30,10 @@ public class SkillManager : MonoBehaviour
                 PlayerStatsManager.Instance.UpdateMaxHealth(1);
                 break;
 
+            case "Movespeed Boost":
+                PlayerStatsManager.Instance.UpdateMovespeed(0.2f);
+                break;
+
             default:
                 Debug.LogWarning("Unknown skill: " + skillName);
                 break;
