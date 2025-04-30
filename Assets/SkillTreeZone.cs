@@ -30,15 +30,7 @@ public class SkillTreeZone : MonoBehaviour
                 //Time.timeScale = isOpen? 1f : 0f;
             }
         }
-
-        if(isOpen)
-        {
-            Cursor.visible = true;
-        }
-        else if(!isOpen)
-        {
-            Cursor.visible = false;
-        }
+        Cursor.visible = isOpen;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

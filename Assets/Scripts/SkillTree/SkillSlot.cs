@@ -18,9 +18,21 @@ public class SkillSlot : MonoBehaviour
     public Image skillIcon;
     public Button skillButton;
     public TMP_Text skillLevelText;
-
+    
     public static event Action<SkillSlot> OnAbilityPointSpent;
     public static event Action<SkillSlot> OnSkillMaxed;
+
+    public void OnEnable()
+    {
+        //If a skill is unlocked by default, skip check through PlayerStatsManager
+        if (!isUnlocked)
+        {
+            isUnlocked = PlayerStatsManager.Instance.IsSkillUnlocked(skillSO);
+            currentLevel = PlayerStatsManager.Instance.GetSkillLevel(skillSO); //if locked, returns 0
+        }
+
+        UpdateUI();
+    }
 
     public void OnValidate()
     {
@@ -41,6 +53,7 @@ public class SkillSlot : MonoBehaviour
             {
                 OnSkillMaxed?.Invoke(this);
             }
+            PlayerStatsManager.Instance.UpdateUnlockedSkillDictionary(skillSO,currentLevel);
 
             UpdateUI();
         }
@@ -63,6 +76,7 @@ public class SkillSlot : MonoBehaviour
     public void Unlock()
     {
         isUnlocked = true;
+        PlayerStatsManager.Instance.UpdateUnlockedSkillDictionary(skillSO,0);
         UpdateUI();
     }
 

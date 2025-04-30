@@ -27,7 +27,7 @@ public class SkillManager : MonoBehaviour
                 break;
 
             default:
-                Debug.LogWarning("Unkown skill: " + skillName);
+                Debug.LogWarning("Unknown skill: " + skillName);
                 break;
         }
     }
