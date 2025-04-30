@@ -7,7 +7,7 @@ public class PlayerStatsManager : MonoBehaviour
 
     public static PlayerStatsManager Instance;
 
-    public GameObject player;
+    //public GameObject player;
 
     [Header("Player Stats")]
     public int currentHealth = 3;
@@ -37,7 +37,7 @@ public class PlayerStatsManager : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()

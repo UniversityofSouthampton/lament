@@ -141,6 +141,7 @@ public class GameManagerScript : MonoBehaviour
     public void restart()
     {
         //sends player back to hub
+        PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.maxHealth;
         SceneManager.LoadScene("Hub");
         setTimeScale();
     }

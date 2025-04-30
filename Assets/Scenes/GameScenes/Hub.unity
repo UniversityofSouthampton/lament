@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 5b4c47105b4437843b87cb423af99195, type: 2}
+      objectReference: {fileID: 11400000, guid: f64e09557f70e0648b4e854c451e0519, type: 2}
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: isUnlocked
       value: 0
@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: eb29ea834fad75742b0e4d146244d0b6, type: 3}
+    - target: {fileID: 5653741451692370033, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8690015828281722975, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: m_Name
       value: SkillButton (1)

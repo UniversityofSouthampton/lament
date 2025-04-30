@@ -12,6 +12,10 @@ public class PlayerInventory : MonoBehaviour
         currentTerraShards = 10;
     }
 
+    void Update()
+    {
+        currentTerraShards = PlayerStatsManager.Instance.currentTerraShards;
+    }
 
     public void takeTerraShards(int pickupTerraShards)
     {

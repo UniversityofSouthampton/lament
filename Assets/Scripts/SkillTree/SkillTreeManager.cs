@@ -54,7 +54,7 @@ public class SkillTreeManager : MonoBehaviour
 
     private void CheckAvailablePoints(SkillSlot slot)
     {
-        if(availablePoints > slot.skillSO.totalCost)
+        if(availablePoints >= slot.skillSO.totalCost)
         {
             slot.TryUpgradeSkill();
         }
@@ -70,7 +70,7 @@ public class SkillTreeManager : MonoBehaviour
 
     private void HandleAbilityPointsSpent(SkillSlot skillSlot)
     {
-        if(availablePoints > skillSlot.skillSO.totalCost)
+        if(availablePoints >= skillSlot.skillSO.totalCost)
         {
             UpdateAbilityPoints(-skillSlot.skillSO.totalCost);
         }
@@ -92,6 +92,6 @@ public class SkillTreeManager : MonoBehaviour
     {
         PlayerStatsManager.Instance.currentTerraShards += amount;
         pointsText.text = PlayerStatsManager.Instance.currentTerraShards.ToString();
-        Debug.Log("Decreased ability points");
+        Debug.Log("Decreased ability points by" + amount);
     }
 }

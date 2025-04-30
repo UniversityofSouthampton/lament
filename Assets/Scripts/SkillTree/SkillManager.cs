@@ -26,6 +26,10 @@ public class SkillManager : MonoBehaviour
                 PlayerStatsManager.Instance.UpdateMaxHealth(1);
                 break;
 
+            case "Max Health Boost 2":
+                PlayerStatsManager.Instance.UpdateMaxHealth(1);
+                break;
+
             default:
                 Debug.LogWarning("Unknown skill: " + skillName);
                 break;
