@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Items/TerraShards.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Items/TerraShards.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/B.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Enemy_Wrought.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Enemy_Wrought.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Idle/Enemy_Whisper.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Spawn/WRspawnDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Spawn/WRspawnDown.anim" afterDir="false" />
-    </list>
+    <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +133,7 @@
       <workItem from="1744647307616" duration="4293000" />
       <workItem from="1746014703905" duration="3783000" />
       <workItem from="1746021503193" duration="5791000" />
-      <workItem from="1746029466803" duration="834000" />
+      <workItem from="1746029466803" duration="1431000" />
     </task>
     <servers />
   </component>
