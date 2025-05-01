@@ -24,6 +24,7 @@ public class HealthPickup : MonoBehaviour
                 if (PlayerStatsManager.Instance.currentHealth == PlayerStatsManager.Instance.maxHealth - 1)
                 {
                     PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.currentHealth + 1;
+                    
                 }
                 else
                 {

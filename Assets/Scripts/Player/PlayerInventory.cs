@@ -19,7 +19,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void takeTerraShards(int pickupTerraShards)
     {
-        currentTerraShards += pickupTerraShards;
+        currentTerraShards += pickupTerraShards + PlayerStatsManager.Instance.terraShardBoost;
         //Debug.Log("Current terra shards:" + currentTerraShards);
     }
 }

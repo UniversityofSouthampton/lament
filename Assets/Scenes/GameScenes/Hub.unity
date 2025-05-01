@@ -9280,7 +9280,7 @@ PrefabInstance:
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 5b4c47105b4437843b87cb423af99195, type: 2}
+      objectReference: {fileID: 11400000, guid: d1f6a42d8b89b97418600d4ba8620423, type: 2}
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: isUnlocked
       value: 0
@@ -9669,7 +9669,7 @@ PrefabInstance:
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 5b4c47105b4437843b87cb423af99195, type: 2}
+      objectReference: {fileID: 11400000, guid: 281b43f5b222bca44babed4023d06265, type: 2}
     - target: {fileID: 5118755672883580988, guid: ebfe4e182cb4c744eb1bd1302d20d79c, type: 3}
       propertyPath: isUnlocked
       value: 0

@@ -224,6 +224,11 @@ public class PlayerControllerNew : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<ActivateDialogue>().ActivateText();
+        ActivateDialogue dialogueActivator = collision.gameObject.GetComponent<ActivateDialogue>();
+        
+        if (dialogueActivator != null)
+        {
+            collision.gameObject.GetComponent<ActivateDialogue>().ActivateText();
+        }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -40,6 +41,11 @@ public class PlayerHealth : MonoBehaviour
         player.GetComponent<AttackNew>().enabled = true;
         damageFlash = GetComponent<DamageFlash>();
 
+    }
+
+    public void Update()
+    {
+        currentHealth = PlayerStatsManager.Instance.currentHealth;
     }
 
     public void TakeDamage(int damage)

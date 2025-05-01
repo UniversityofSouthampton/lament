@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class PlayerStatsManager : MonoBehaviour
     
     [Header("Player Inventory")]
     public int currentTerraShards;
+    public int terraShardBoost;
 
     //Holds a dictionary to track unlocked skills and their current level
     public Dictionary<SkillSO, int> unlockedSkills = new Dictionary<SkillSO, int>();
@@ -53,6 +55,8 @@ public class PlayerStatsManager : MonoBehaviour
         }
     }
 
+
+
     public void UpdateMaxHealth(int amount)
     {
         maxHealth += amount;
@@ -64,9 +68,14 @@ public class PlayerStatsManager : MonoBehaviour
         moveSpeed += amount;      
     }
 
+    public void UpdateTerrashardPickup(int amount)
+    {
+        terraShardBoost += amount;
+    }
+
     public void takeTerraShards(int pickupTerraShards)
     {
-        currentTerraShards += pickupTerraShards;
+        currentTerraShards += pickupTerraShards + PlayerStatsManager.Instance.terraShardBoost;
         //Debug.Log("Current terra shards:" + currentTerraShards);
     }
 

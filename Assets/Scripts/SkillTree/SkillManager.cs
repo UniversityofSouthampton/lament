@@ -34,6 +34,14 @@ public class SkillManager : MonoBehaviour
                 PlayerStatsManager.Instance.UpdateMovespeed(0.2f);
                 break;
 
+            case "TerraShard Boost":
+                PlayerStatsManager.Instance.UpdateTerrashardPickup(2);
+                break;
+
+            case "TerraShard Boost 2":
+                PlayerStatsManager.Instance.UpdateTerrashardPickup(4);
+                break;
+
             default:
                 Debug.LogWarning("Unknown skill: " + skillName);
                 break;
