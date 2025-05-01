@@ -15,6 +15,8 @@ public class GameManagerScript : MonoBehaviour
    
     public GameObject player;
 
+    [SerializeField]
+    private SceneTransition _sceneTransition;
     // Start is called before the first frame update
     void Start()
     {
@@ -142,21 +144,21 @@ public class GameManagerScript : MonoBehaviour
     {
         //sends player back to hub
         PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.maxHealth;
-        SceneManager.LoadScene("Hub");
+        _sceneTransition.LoadScene("Hub");
         setTimeScale();
     }
 
     public void restarttut()
     {
         //sends player back to tutorial
-        SceneManager.LoadScene("Tutorial");
+        _sceneTransition.LoadScene("Tutorial");
         setTimeScale();
     }
 
     public void mainMenu()
     {
         //sends player back to main menu
-        SceneManager.LoadScene("MainMenu");
+       _sceneTransition.LoadScene("MainMenu");
         setTimeScale();
     }
 

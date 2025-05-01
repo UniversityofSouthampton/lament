@@ -2324,6 +2324,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792344089}
   m_CullTransparentMesh: 1
+--- !u!1001 &906077345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 332.7254
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 247.70343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9685609
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705742905900746642, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180389155007666643, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
+      propertyPath: m_Name
+      value: SceneTransition (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04fb32594fa290d4686adffdb3e77314, type: 3}
 --- !u!1 &989948702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,17 +2519,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7590115963827699569, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
   m_PrefabInstance: {fileID: 2122166351}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1002450036 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5837494924873821041, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
-  m_PrefabInstance: {fileID: 2122166351}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002450034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d390e940b7d3748849564490012d9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1002450037 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1011477753733219935, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
@@ -2511,7 +2557,6 @@ MonoBehaviour:
   - {fileID: 1925439629}
   - {fileID: 443892078}
   - {fileID: 2141589719}
-  playerHealth: {fileID: 1002450036}
 --- !u!114 &1002450045 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5793127380532697116, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
@@ -2535,8 +2580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54efa08027195204ab6e4a4d27f1971d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 0, b: 0, a: 1}
-  flashDuration: 0.25
 --- !u!1 &1043297426
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,6 +3382,7 @@ MonoBehaviour:
   isGameOverScreenActive: 0
   pauseMenuUI: {fileID: 424544536}
   player: {fileID: 1002450034}
+  _sceneTransition: {fileID: 0}
 --- !u!4 &1236768235
 Transform:
   m_ObjectHideFlags: 0
@@ -6121,3 +6165,4 @@ SceneRoots:
   - {fileID: 2122166351}
   - {fileID: 351899534}
   - {fileID: 629195643}
+  - {fileID: 906077345}

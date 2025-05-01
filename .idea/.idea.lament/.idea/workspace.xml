@@ -6,6 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/GameManagerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/SceneController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Enemy_Wrought.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Enemy_Wrought.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackUp.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +149,8 @@
       <workItem from="1746014703905" duration="3783000" />
       <workItem from="1746021503193" duration="5791000" />
       <workItem from="1746029466803" duration="1431000" />
-      <workItem from="1746099276562" duration="1713000" />
+      <workItem from="1746099276562" duration="2399000" />
+      <workItem from="1746116301197" duration="9656000" />
     </task>
     <servers />
   </component>

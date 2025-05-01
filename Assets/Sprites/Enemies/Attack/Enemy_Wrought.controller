@@ -507,6 +507,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: New Bool
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -735,10 +741,10 @@ AnimatorStateMachine:
     m_Position: {x: 550, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1987357089947250092}
-    m_Position: {x: 850, y: 20, z: 0}
+    m_Position: {x: 850, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4371609466903275811}
-    m_Position: {x: 570, y: 130, z: 0}
+    m_Position: {x: 630, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2748522642919137032}
     m_Position: {x: 420, y: 30, z: 0}
@@ -752,7 +758,7 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -90, y: -20, z: 0}
   m_EntryPosition: {x: -50, y: 40, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 970, y: -40, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -4848963143980427442}
 --- !u!1102 &3271067792437735422
