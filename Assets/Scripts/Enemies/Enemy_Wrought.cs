@@ -90,6 +90,11 @@ public class Enemy_Wrought : MonoBehaviour
             }
         }
         
+        Vector2 movement = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime) - (Vector2)transform.position;
+        
+        velocityX = movement.x / Time.deltaTime;
+        velocityY = movement.y / Time.deltaTime;
+        
     }
 
     void HandleAttack()
