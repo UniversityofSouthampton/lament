@@ -10624,7 +10624,7 @@ Tilemap:
       - {fileID: 760172752, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 619904793, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1699262533, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -7, y: -3, z: 0}
@@ -10669,7 +10669,7 @@ Tilemap:
       - {fileID: -1279845803, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 2024519584, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 2040344015, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: -3, z: 0}
@@ -10729,7 +10729,7 @@ Tilemap:
       - {fileID: 480092148, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 888919081, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: -1887059698, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: 1, z: 0}
@@ -10969,7 +10969,7 @@ Tilemap:
       - {fileID: 2146308667, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1554437729, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1662552467, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 6, y: 3, z: 0}
@@ -17796,7 +17796,7 @@ Tilemap:
       - {fileID: 159601199, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: -1291862531, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1957230336, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: -3, z: 0}
@@ -17871,7 +17871,7 @@ Tilemap:
       - {fileID: 760172752, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 619904793, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1699262533, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: -1, z: 0}
@@ -17961,7 +17961,7 @@ Tilemap:
       - {fileID: 760172752, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 619904793, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1699262533, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 1, z: 0}
@@ -18096,7 +18096,7 @@ Tilemap:
       - {fileID: 760172752, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 619904793, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 1699262533, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 4, z: 0}
@@ -18111,7 +18111,7 @@ Tilemap:
       - {fileID: -1554645017, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 588633865, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
       - {fileID: 20536032, guid: 6fe59debbaa5aaf4f98622f7ab0743dd, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: 4, z: 0}
@@ -22815,8 +22815,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 1024
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -22844,7 +22844,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.14224245, y: 0, z: -1.2690544, w: 0}
+  m_margin: {x: 0.14224245, y: 0, z: -40.595207, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -30886,7 +30886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27, y: -25}
+  m_AnchoredPosition: {x: 100.6, y: -25}
   m_SizeDelta: {x: 85.9, y: 67.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6967196502813267505
