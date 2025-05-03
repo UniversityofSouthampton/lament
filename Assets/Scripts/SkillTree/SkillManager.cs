@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class SkillManager : MonoBehaviour
 {
@@ -41,6 +42,15 @@ public class SkillManager : MonoBehaviour
             case "TerraShard Boost 2":
                 PlayerStatsManager.Instance.UpdateTerrashardPickup(4);
                 break;
+
+            case "Damage Boost":
+                PlayerStatsManager.Instance.UpdateDamage(0.5f);
+                break;
+            
+            case "Damage Boost 2":
+                PlayerStatsManager.Instance.UpdateDamage(0.5f);
+                break;
+
 
             default:
                 Debug.LogWarning("Unknown skill: " + skillName);

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82647160db046f64788f509a94d52bec, type: 3}
-  m_Name: TerraShardBoost
+  m_Name: DamageBoost 2
   m_EditorClassIdentifier: 
-  skillName: TerraShard Boost
-  maxLevel: 12
-  skillIcon: {fileID: 21300000, guid: cf6242c2c95c6b947bccdc1dc562bff2, type: 3}
-  totalCost: 12
+  skillName: Damage Boost 2
+  maxLevel: 14
+  skillIcon: {fileID: 21300000, guid: 242ececae52e2054c95487faf3842644, type: 3}
+  totalCost: 14

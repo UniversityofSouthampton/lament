@@ -129,7 +129,11 @@ public class Enemy_Whisper : MonoBehaviour
         //Debug.Log("Whisper health is" + currentHealth);
         if(currentHealth <= 0)
         {
-            roomManager.EnemyKilled(gameObject);
+            if (roomManager != null)
+            {
+                roomManager.EnemyKilled(gameObject);
+            }
+        
             anim.SetTrigger("isDead");
             audioManager.PlaySfx(audioManager.whisperdeath);
             StartCoroutine(DestroyEnemy());

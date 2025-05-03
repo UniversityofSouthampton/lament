@@ -6,6 +6,13 @@ public class Weapon : MonoBehaviour
 {
     public float damage = 1;
 
+    public float damageBoost;
+
+    void Update()
+    {
+        damageBoost = PlayerStatsManager.Instance.damageBoost;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
        //Logic for Whisper enemy
@@ -22,12 +29,12 @@ public class Weapon : MonoBehaviour
            
             if (enemy is not null)
             {
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage + damageBoost);
             }
             
             if (enemyWrought is not null)
             {
-                enemyWrought.TakeDamage(damage);
+                enemyWrought.TakeDamage(damage + damageBoost);
             }
             
         }

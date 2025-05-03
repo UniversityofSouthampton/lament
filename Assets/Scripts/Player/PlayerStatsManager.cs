@@ -14,6 +14,7 @@ public class PlayerStatsManager : MonoBehaviour
     public int currentHealth = 3;
     public int maxHealth = 3;
     public float moveSpeed = 1f;
+    public float damageBoost;
     
     [Header("Player Inventory")]
     public int currentTerraShards;
@@ -71,6 +72,11 @@ public class PlayerStatsManager : MonoBehaviour
     public void UpdateTerrashardPickup(int amount)
     {
         terraShardBoost += amount;
+    }
+
+    public void UpdateDamage(float amount)
+    {
+        damageBoost += amount;
     }
 
     public void takeTerraShards(int pickupTerraShards)
