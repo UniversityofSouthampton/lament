@@ -19,6 +19,7 @@ public class PlayerStatsManager : MonoBehaviour
     [Header("Player Inventory")]
     public int currentTerraShards;
     public int terraShardBoost;
+    public bool hasBossKey = false;
 
     //Holds a dictionary to track unlocked skills and their current level
     public Dictionary<SkillSO, int> unlockedSkills = new Dictionary<SkillSO, int>();
@@ -83,6 +84,11 @@ public class PlayerStatsManager : MonoBehaviour
     {
         currentTerraShards += pickupTerraShards + PlayerStatsManager.Instance.terraShardBoost;
         //Debug.Log("Current terra shards:" + currentTerraShards);
+    }
+    
+    public void UnlockKey()
+    {
+        hasBossKey = true;
     }
 
     public void UpdateUnlockedSkillDictionary(SkillSO skillSO, int skillLevel)

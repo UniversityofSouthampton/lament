@@ -51,6 +51,10 @@ public class SkillManager : MonoBehaviour
                 PlayerStatsManager.Instance.UpdateDamage(0.5f);
                 break;
 
+            case "Unlock Key":
+                PlayerStatsManager.Instance.UnlockKey();
+                Debug.Log("Player has the boss key!");
+                break;
 
             default:
                 Debug.LogWarning("Unknown skill: " + skillName);
