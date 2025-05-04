@@ -7,14 +7,14 @@ public class SkillTreeZone : MonoBehaviour
 {
     public GameObject skillsCanvas;
     private bool playerInside;
-    private bool isOpen;
+    private bool isOpen ;
     private PlayerControllerNew playerMovement;
     private AttackNew playerAttack;
 
 
     void Update()
     {
-        Debug.Log("isOpen: " + isOpen);
+        //Debug.Log("isOpen: " + isOpen);
 
         if(playerInside && Input.GetKeyDown(KeyCode.E))
         {

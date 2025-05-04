@@ -16,7 +16,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject player;
 
     [SerializeField]
-    private SceneTransition _sceneTransition;
+    public SceneTransition _sceneTransition;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,7 @@ public class GameManagerScript : MonoBehaviour
         pauseMenuUI = GameObject.FindGameObjectWithTag("PauseMenuUI");
         player = GameObject.FindGameObjectWithTag("Player");
         */
+        setTimeScale();
 
         Cursor.visible = false;
     }
@@ -143,9 +144,9 @@ public class GameManagerScript : MonoBehaviour
     public void restart()
     {
         //sends player back to hub
-        _sceneTransition.LoadScene("Hub");
+        Time.timeScale = 1f;
         PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.maxHealth;
-        setTimeScale();
+        _sceneTransition.LoadScene("Hub");
     }
 
     public void restarttut()
@@ -158,7 +159,7 @@ public class GameManagerScript : MonoBehaviour
     public void mainMenu()
     {
         //sends player back to main menu
-       _sceneTransition.LoadScene("MainMenu");
+        _sceneTransition.LoadScene("MainMenu");
         setTimeScale();
     }
 

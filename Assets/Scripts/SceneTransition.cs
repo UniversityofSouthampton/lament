@@ -7,12 +7,19 @@ public class SceneTransition : MonoBehaviour
 {
    [SerializeField] private float _sceneFadeDuration;
 
+
    private SceneFade _sceneFade;
 
    private void Awake()
    {
       _sceneFade = GetComponentInChildren<SceneFade>();
-      DontDestroyOnLoad(this.gameObject);
+
+      if(_sceneFade != null)
+      {
+        Debug.LogError("SceneFade component has been found in children!");
+      
+      }
+      DontDestroyOnLoad(gameObject);
    }
 
    private IEnumerator Start()
@@ -26,8 +33,9 @@ public class SceneTransition : MonoBehaviour
    }
 
    private IEnumerator LoadSceneCoroutine(string sceneName)
-   {
-      yield return _sceneFade.FadeOutCoroutine(_sceneFadeDuration);
+   {  
+      //yield return _sceneFade.FadeOutCoroutine(_sceneFadeDuration);
+      //yield return new WaitForSeconds(1f);
       yield return SceneManager.LoadSceneAsync(sceneName);
    }
 }
