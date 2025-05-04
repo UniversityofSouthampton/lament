@@ -6,9 +6,20 @@ namespace DialogueSystem
 {
     public class DialogueHolder : MonoBehaviour
     {
-        private void Awake()
+        private void OnEnable()
+        {
+            if (gameObject.activeInHierarchy)
+            {
+                StartDialogue();
+                Debug.Log("Dialogue has been activated");
+            }
+            
+        }
+
+        public void StartDialogue()
         {
             StartCoroutine(dialogueSequence());
+            Debug.Log("Dialogue Sequence has commenced");
         }
         private IEnumerator dialogueSequence()
         {
