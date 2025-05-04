@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 629195643}
   - component: {fileID: 629195642}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Black Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5935,6 +5935,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 935817933205362751, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1011477753733219935, guid: dddb1c53f2b06d243a2b08d9da3ab1ed, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6250,6 +6254,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 351899534}
   - {fileID: 1306971929}
   - {fileID: 1236768235}
   - {fileID: 1145815760}
@@ -6262,5 +6267,4 @@ SceneRoots:
   - {fileID: 807178287}
   - {fileID: 508431283}
   - {fileID: 2122166351}
-  - {fileID: 351899534}
   - {fileID: 629195643}

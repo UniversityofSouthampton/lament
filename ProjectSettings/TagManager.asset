@@ -19,6 +19,7 @@ TagManager:
   - GameOverUI
   - PauseMenuUI
   - DialogueActivator
+  - Interactable
   layers:
   - Default
   - TransparentFX
