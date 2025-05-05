@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/Hub.unity
     guid: c768dd9c0fed37d40a750fff7a3988b9
   - enabled: 1
+    path: Assets/Scenes/GameScenes/AngerGate.unity
+    guid: 9a38b7503d77a8f4980f0081600f4e99
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/BargainingGate.unity
+    guid: a2a62e11d855fb340999e2908cd8a3cc
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/DenialGate.unity
+    guid: ce5f9138c5c78a641b2feaf4a001fe92
+  - enabled: 1
     path: Assets/Scenes/GameScenes/DepressionGate.unity
     guid: 513197f10cce2e94199ba0639009c098
   - enabled: 1
