@@ -5255,7 +5255,7 @@ MonoBehaviour:
   leftRoom: {fileID: 1287615882620350439, guid: dbe9f44449c4a874fb13540316171d1c, type: 3}
   rightRoom: {fileID: 1796293705696656892, guid: ef0b3210b537150459eb67db9e015762, type: 3}
   closedRoom: {fileID: 7653722765347957364, guid: aac8f8d1a8e2f594296fa05f7b68f59a, type: 3}
-  waitTime: 10
+  waitTime: 2
   spawnedBoss: 0
   boss: {fileID: 8264159471342029936, guid: e2958c7bb750cc549a799a11df405a00, type: 3}
   rooms: []
