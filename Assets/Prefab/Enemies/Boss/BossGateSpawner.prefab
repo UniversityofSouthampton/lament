@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 494480310261337790}
+  - {fileID: 7358893718382001937}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &458761534331364248
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesInRoom: []
-  bossGateway: {fileID: 705264465607715226}
---- !u!1001 &3883291775648710540
+  bossGateway: {fileID: 7581017957502720053}
+--- !u!1001 &6131805556571295267
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -101,10 +101,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6093655410618981612}
     m_Modifications:
-    - target: {fileID: 2762229906872780621, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3690847725109244210, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -147,24 +143,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336301240515057174, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
       propertyPath: m_Name
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 4336301240515057174, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: BossGate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
---- !u!4 &494480310261337790 stripped
+--- !u!4 &7358893718382001937 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3690847725109244210, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
-  m_PrefabInstance: {fileID: 3883291775648710540}
+  m_PrefabInstance: {fileID: 6131805556571295267}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &705264465607715226 stripped
+--- !u!1 &7581017957502720053 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4336301240515057174, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
-  m_PrefabInstance: {fileID: 3883291775648710540}
+  m_PrefabInstance: {fileID: 6131805556571295267}
   m_PrefabAsset: {fileID: 0}
