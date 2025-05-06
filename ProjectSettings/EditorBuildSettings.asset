@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScenes/Dungeon.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/BossIntroCutscene.unity
+    guid: 34cb27b8359db5c46a8c1ec1a11068fd
   m_configObjects: {}
