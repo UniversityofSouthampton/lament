@@ -1030,6 +1030,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
+  - first: {x: -10, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
   - first: {x: -9, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -1215,6 +1225,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
+  - first: {x: -10, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2152,19 +2172,19 @@ Tilemap:
       m_AllTileFlags: 1073741826
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 186
+  - m_RefCount: 188
     m_Data: {fileID: 11400000, guid: a9d26a8cab8139f4e848704ce38ecbea, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 76
     m_Data: {fileID: 997063623, guid: f2e8e16824a53c7448e94075ff18d05f, type: 3}
-  - m_RefCount: 21
+  - m_RefCount: 22
     m_Data: {fileID: 583542373, guid: f2e8e16824a53c7448e94075ff18d05f, type: 3}
-  - m_RefCount: 83
+  - m_RefCount: 84
     m_Data: {fileID: 1599406081, guid: f2e8e16824a53c7448e94075ff18d05f, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: -2415095, guid: f2e8e16824a53c7448e94075ff18d05f, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 186
+  - m_RefCount: 188
     m_Data:
       e00: 1
       e01: 0
@@ -2183,13 +2203,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 186
+  - m_RefCount: 188
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -9, y: -6, z: 0}
-  m_Size: {x: 19, y: 12, z: 1}
+  m_Origin: {x: -10, y: -6, z: 0}
+  m_Size: {x: 20, y: 12, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2399,9 +2419,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: fe88fcc7769224940a23b644cfb50be8, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 1f3eb8a3cb69d734a961b4fccbedf0e9, type: 2}
+    m_Data: {fileID: 11400000, guid: 40031e0540f3dd14894893cde304695f, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: d9dcfc0ee10da824f8334059f36f8e1d, type: 2}
+    m_Data: {fileID: 11400000, guid: a7b9693d4885f134db5e30daf72d5dfc, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 6004b80dc5c853449918de07f98e76bc, type: 2}
   - m_RefCount: 1
@@ -2446,9 +2466,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -1085008454, guid: a64f2bc1dedc46f40bf6937344880ff4, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1283930892, guid: 6e4c8a0010bf7f3459f4dee3c9991d21, type: 3}
+    m_Data: {fileID: 1311384845, guid: a64f2bc1dedc46f40bf6937344880ff4, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1862389726, guid: 6e4c8a0010bf7f3459f4dee3c9991d21, type: 3}
+    m_Data: {fileID: 1885951716, guid: a64f2bc1dedc46f40bf6937344880ff4, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1707020051, guid: a64f2bc1dedc46f40bf6937344880ff4, type: 3}
   - m_RefCount: 1
@@ -2543,9 +2563,9 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -6690,7 +6710,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
