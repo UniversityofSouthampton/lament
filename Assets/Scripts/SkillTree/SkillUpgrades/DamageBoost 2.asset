@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Damage Boost 2
   maxLevel: 14
-  skillIcon: {fileID: 21300000, guid: 242ececae52e2054c95487faf3842644, type: 3}
+  skillIcon: {fileID: 21300000, guid: 7365f2b4ffee6414a970800f2cba4a3e, type: 3}
   totalCost: 14

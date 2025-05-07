@@ -60,4 +60,40 @@ public class SkillDescription : MonoBehaviour
         skillTitle.text = "Melancholia's Key";
         skillDescription.text = "Grants access to Depression's Lair";
     }
+
+    public void toolTipUnlockSecondary()
+    {
+        skillTitle.text = "Respite's Crush";
+        skillDescription.text = "Unlock a secondary, heavy attack\n[Unavailable in demo]";
+    }
+
+    public void toolTipHeavyBoost()
+    {
+        skillTitle.text = "Sword Mastery";
+        skillDescription.text = "Slightly increase heavy attack damage\n[Unavailable in demo]";
+    }
+
+    public void toolTipDashCooldown()
+    {
+        skillTitle.text = "Shade Leap";
+        skillDescription.text = "Slight dash cooldown decrease\n[Unavailable in demo]";
+    }
+
+    public void toolTipDashCooldown2()
+    {
+        skillTitle.text = "Vanisher's Gift";
+        skillDescription.text = "Moderate dash cooldown decrease\n[Unavailable in demo]";
+    }
+
+    public void tooltipAttackSpeed()
+    {
+        skillTitle.text = "Blade Instinct";
+        skillDescription.text = "Slight attack speed increase\n[Unavailable in demo]";
+    }
+
+    public void tooltipAttackSpeed2()
+    {
+        skillTitle.text = "Bloodrush";
+        skillDescription.text = "Slight attack speed increase\n[Unavailable in demo]";
+    }
 }

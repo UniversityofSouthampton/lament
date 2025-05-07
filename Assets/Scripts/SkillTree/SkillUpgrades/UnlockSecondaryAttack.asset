@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82647160db046f64788f509a94d52bec, type: 3}
-  m_Name: UnlockKey
+  m_Name: UnlockSecondaryAttack
   m_EditorClassIdentifier: 
-  skillName: Unlock Key
-  maxLevel: 50
-  skillIcon: {fileID: 21300000, guid: fb3261725617b504eb451b7140c424e8, type: 3}
-  totalCost: 50
+  skillName: Unlock Secondary Attack
+  maxLevel: 999
+  skillIcon: {fileID: 21300000, guid: 6f9ff700045c7574c8585c6b856d7828, type: 3}
+  totalCost: 999

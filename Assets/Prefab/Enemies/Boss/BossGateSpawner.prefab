@@ -145,6 +145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossGate
       objectReference: {fileID: 0}
+    - target: {fileID: 4336301240515057174, guid: 0af24e4eaa13d704b8adfada20b565eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
