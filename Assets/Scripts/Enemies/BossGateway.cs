@@ -35,6 +35,7 @@ public class BossGateway : MonoBehaviour
         hasKey.SetActive(true);
         yield return new WaitForSeconds(UIDuration);
         hasKey.SetActive(false);
+        yield return SceneManager.LoadSceneAsync("BossIntroCutscene");
     }
 
     private IEnumerator hasNoKeyUI()

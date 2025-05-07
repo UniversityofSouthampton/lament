@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: DashCooldown
   maxLevel: 999
-  skillIcon: {fileID: 21300000, guid: d53b4c92b4efa0d47b4346ae7aa7f2ca, type: 3}
+  skillIcon: {fileID: 21300000, guid: b491313967c42874f9e2239c83bbe3df, type: 3}
   totalCost: 999

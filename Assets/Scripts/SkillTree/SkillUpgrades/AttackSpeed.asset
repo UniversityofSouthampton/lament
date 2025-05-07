@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: AttackSpeed
   maxLevel: 999
-  skillIcon: {fileID: 21300000, guid: f6def891363729442aa598e0473d52ae, type: 3}
+  skillIcon: {fileID: 21300000, guid: 34e95354093fb5c41acb01bccd5c7f26, type: 3}
   totalCost: 999
