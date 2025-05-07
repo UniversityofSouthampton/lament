@@ -515,7 +515,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 333625405}
     m_Modifications:
     - target: {fileID: 5946834400670530635, guid: a0a85f189a5c0f14ea177353550d8c51, type: 3}
       propertyPath: playerInventory
@@ -523,7 +523,7 @@ PrefabInstance:
       objectReference: {fileID: 486445499}
     - target: {fileID: 6195091047623594537, guid: a0a85f189a5c0f14ea177353550d8c51, type: 3}
       propertyPath: m_Name
-      value: Canvas (HUD)
+      value: HUDCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 7844419296354547430, guid: a0a85f189a5c0f14ea177353550d8c51, type: 3}
       propertyPath: m_Pivot.x
@@ -1561,6 +1561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 593705612}
   - {fileID: 474909382}
   - {fileID: 1809814382}
   m_Father: {fileID: 0}
@@ -2267,7 +2268,7 @@ GameObject:
   - component: {fileID: 474909379}
   - component: {fileID: 474909378}
   m_Layer: 5
-  m_Name: HUDCanvas
+  m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2648,6 +2649,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529337333}
   m_CullTransparentMesh: 1
+--- !u!224 &593705612 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7844419296354547430, guid: a0a85f189a5c0f14ea177353550d8c51, type: 3}
+  m_PrefabInstance: {fileID: 133254388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &637904581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3758,10 +3764,6 @@ PrefabInstance:
     - target: {fileID: 4841503091143511532, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
       propertyPath: moveSpeed
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841503091143511532, guid: cf07d5bccd9219c428b2144d3667085e, type: 3}
-      propertyPath: currentTerraShards
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10982,7 +10984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809814382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14562,7 +14564,6 @@ SceneRoots:
   - {fileID: 2074776918}
   - {fileID: 203122851}
   - {fileID: 1356454500}
-  - {fileID: 133254388}
   - {fileID: 333625405}
   - {fileID: 773540951}
   - {fileID: 637904581}
