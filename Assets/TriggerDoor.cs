@@ -9,7 +9,8 @@ public class TriggerDoor : MonoBehaviour
     Animator animator;
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator.SetBool("IsOpen", false); // Triggers transition to Close
+        animator.Play("Door Close", 0, 0f);
     }
     public void OpenDoor()
     {

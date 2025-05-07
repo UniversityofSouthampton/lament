@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DungeonGeneration/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DungeonGeneration/RoomManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TriggerDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TriggerDoor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,7 @@
       <workItem from="1746472971627" duration="710000" />
       <workItem from="1746549063807" duration="1262000" />
       <workItem from="1746574105766" duration="3590000" />
-      <workItem from="1746625658938" duration="3093000" />
+      <workItem from="1746625658938" duration="5731000" />
     </task>
     <servers />
   </component>
