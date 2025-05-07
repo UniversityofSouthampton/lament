@@ -28,7 +28,7 @@ public class TutorialRoomPopup : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
         PopUp.SetActive(true);
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(10);
         PopUp.SetActive(false);
 
     }
