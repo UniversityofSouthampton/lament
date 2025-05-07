@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_B.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_B.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_L.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_L.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_R.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_R.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_T.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls/WallDoor_T.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls &amp; Doors/Doors.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/Walls &amp; Doors/Doors.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +17,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/TriggerDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@3.1.2/Runtime/Tiles/AnimatedTile/AnimatedTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
@@ -147,7 +141,8 @@
       <workItem from="1746099276562" duration="2399000" />
       <workItem from="1746116301197" duration="9945000" />
       <workItem from="1746472971627" duration="710000" />
-      <workItem from="1746549063807" duration="662000" />
+      <workItem from="1746549063807" duration="1262000" />
+      <workItem from="1746574105766" duration="739000" />
     </task>
     <servers />
   </component>
