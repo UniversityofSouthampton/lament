@@ -20,5 +20,15 @@ public class TriggerDoor : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
     }
+
+    private void OnEnable()
+    {
+        CloseDoor();
+    }
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+    }
     
 }
