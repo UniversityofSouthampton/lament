@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Door Close
+    m_ConditionEvent: DoorClose
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4373936275572159073}
@@ -111,7 +111,7 @@ AnimatorController:
   m_Name: Doors
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Door Close
+  - m_Name: DoorClose
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -166,7 +166,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Door Close
+    m_ConditionEvent: DoorClose
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8686167876536203335}
