@@ -29,6 +29,15 @@ public class SkillTreeZone : MonoBehaviour
 
                 //Time.timeScale = isOpen? 1f : 0f;
             }
+
+            if(isOpen)
+            {
+                Time.timeScale = 0f;
+            }
+            else if(!isOpen)
+            {
+                Time.timeScale = 1f;
+            }
         }
         Cursor.visible = isOpen;
     }

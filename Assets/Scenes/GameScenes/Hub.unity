@@ -13370,6 +13370,38 @@ PrefabInstance:
       propertyPath: skillsCanvas
       value: 
       objectReference: {fileID: 1809814381}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -0.596143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -0.03681141
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: -0.39174056
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.65518486
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 0.37347925
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: -0.67105085
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 0.63948697
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314298152439542765, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: -0.20752507
+      objectReference: {fileID: 0}
     - target: {fileID: 4794875874696035892, guid: 3db11fb425d024c4eb17676d6de7fb8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.092
