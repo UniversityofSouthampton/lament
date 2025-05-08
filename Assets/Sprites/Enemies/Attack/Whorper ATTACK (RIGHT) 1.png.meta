@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cfc27ba9ab0be9e458a6e9c60588d6d9
+guid: f5a0581e8c35ec248b93343c1fb0c094
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_0
+      name: Whorper ATTACK (RIGHT) 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91aa4c37ec7f4ea49bb02f9e27563999
-      internalID: -1736214452
+      spriteID: 18a0e0cdd853ba84e8495df480295655
+      internalID: 306269374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_1
+      name: Whorper ATTACK (RIGHT) 1_1
       rect:
         serializedVersion: 2
-        x: 100
+        x: 132
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf2c22f4d2e17f4e85f53f73c46df96
-      internalID: -1424197517
+      spriteID: e9a7c8a10e67771479a19a813f16a16c
+      internalID: 1384994454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_2
+      name: Whorper ATTACK (RIGHT) 1_2
       rect:
         serializedVersion: 2
-        x: 200
+        x: 264
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23fd988f1ad71e04fa3a84be633f3a66
-      internalID: 679938870
+      spriteID: 2631124ce1dcbd84c8403d9aa84fb747
+      internalID: -645696078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_3
+      name: Whorper ATTACK (RIGHT) 1_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 396
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed053537627d44940ab86db541b251f0
-      internalID: -1455877036
+      spriteID: 53f760dfbabf5e34ca0aac12967c3ebf
+      internalID: -1533566961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_4
+      name: Whorper ATTACK (RIGHT) 1_4
       rect:
         serializedVersion: 2
-        x: 400
+        x: 528
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cda331de0a6fdf64482f5ee57f72c3cd
-      internalID: -179693489
+      spriteID: 35dbbf939244b09488aeb13e68d7cbf9
+      internalID: 1433087408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_5
+      name: Whorper ATTACK (RIGHT) 1_5
       rect:
         serializedVersion: 2
-        x: 500
+        x: 660
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b086d0bf39630334fa44991c3da4f7fd
-      internalID: -1678426828
+      spriteID: cdccc93196c69f24dbcef548c43a8108
+      internalID: -1583880000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_6
+      name: Whorper ATTACK (RIGHT) 1_6
       rect:
         serializedVersion: 2
-        x: 600
+        x: 792
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7e25b4a859c2ee4fa2d7a37b004ab68
-      internalID: 324233009
+      spriteID: 085cd03905eeb374c98f02ba44376eb4
+      internalID: -213121320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_7
+      name: Whorper ATTACK (RIGHT) 1_7
       rect:
         serializedVersion: 2
-        x: 700
+        x: 924
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 854b27f3407c50d47b6ea1d4d0b7a31f
-      internalID: 1428734258
+      spriteID: 72b1e8494dd874440a92a79c642c2fae
+      internalID: -845078495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_8
+      name: Whorper ATTACK (RIGHT) 1_8
       rect:
         serializedVersion: 2
-        x: 800
+        x: 1056
         y: 0
-        width: 100
-        height: 100
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,29 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95340e1bb5036e74389038657c8d472f
-      internalID: -2127851834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Whorper ATTACK new(RIGHT)_9
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ed1842de57b4204c99cd5aec6661020
-      internalID: 1601090422
+      spriteID: 5e87016054e161547aaf2c891132dbaf
+      internalID: -45809530
       vertices: []
       indices: 
       edges: []
@@ -317,16 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Whorper ATTACK new(RIGHT)_0: -1736214452
-      Whorper ATTACK new(RIGHT)_1: -1424197517
-      Whorper ATTACK new(RIGHT)_2: 679938870
-      Whorper ATTACK new(RIGHT)_3: -1455877036
-      Whorper ATTACK new(RIGHT)_4: -179693489
-      Whorper ATTACK new(RIGHT)_5: -1678426828
-      Whorper ATTACK new(RIGHT)_6: 324233009
-      Whorper ATTACK new(RIGHT)_7: 1428734258
-      Whorper ATTACK new(RIGHT)_8: -2127851834
-      Whorper ATTACK new(RIGHT)_9: 1601090422
+      Whorper ATTACK (RIGHT) 1_0: 306269374
+      Whorper ATTACK (RIGHT) 1_1: 1384994454
+      Whorper ATTACK (RIGHT) 1_2: -645696078
+      Whorper ATTACK (RIGHT) 1_3: -1533566961
+      Whorper ATTACK (RIGHT) 1_4: 1433087408
+      Whorper ATTACK (RIGHT) 1_5: -1583880000
+      Whorper ATTACK (RIGHT) 1_6: -213121320
+      Whorper ATTACK (RIGHT) 1_7: -845078495
+      Whorper ATTACK (RIGHT) 1_8: -45809530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

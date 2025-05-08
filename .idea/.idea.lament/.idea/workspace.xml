@@ -6,8 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DungeonGeneration/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DungeonGeneration/RoomManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TriggerDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TriggerDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/new sounds/protagonist/attack.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/new sounds/protagonist/attack.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemies/Enemy_Wrought.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemies/Enemy_Wrought.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/B 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/B 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/BR 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/BR 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/LBR 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/LBR 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/LR 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/LR 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/T 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/T 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TB 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TB 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TBR 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TBR 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TL 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TL 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TLR 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Rooms/NEW Rooms/TLR 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/AngerGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/AngerGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/BargainingGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/BargainingGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DenialGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DenialGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Hub.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Wrought.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AttackNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AttackNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/WRattackUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Whorper ATTACK new(RIGHT) 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Whorper ATTACK new(RIGHT) 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Whorper ATTACK new(RIGHT).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Attack/Whorper ATTACK new(RIGHT).png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +171,8 @@
       <workItem from="1746472971627" duration="710000" />
       <workItem from="1746549063807" duration="1262000" />
       <workItem from="1746574105766" duration="3590000" />
-      <workItem from="1746625658938" duration="5731000" />
+      <workItem from="1746625658938" duration="6637000" />
+      <workItem from="1746662864929" duration="5156000" />
     </task>
     <servers />
   </component>

@@ -16,12 +16,15 @@ public class AttackNew : MonoBehaviour
     float atkTimer = 0f;
     public bool isAttacking = false;
     private bool isAttackCanceled = false;
-    Animator anim;
     
+    Animator anim;
+
+    AudioManager audioManager;
     void Start()
     {
         playerControllerNew = GetComponent<PlayerControllerNew>();
         anim = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
 
@@ -61,6 +64,7 @@ public class AttackNew : MonoBehaviour
         anim.SetBool("isAttacking", true);
         StartCoroutine(MeleeActive());
         isAttacking = true;
+        audioManager.PlaySfx(audioManager.playerattack);
     }
 
     private IEnumerator MeleeActive()

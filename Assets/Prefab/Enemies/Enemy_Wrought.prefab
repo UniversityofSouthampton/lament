@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomManager: {fileID: 0}
-  speed: 3
+  speed: 2
   stoppingDistance: 1
   nearDistance: 2
   startTimeBetweenShots: 1
@@ -271,6 +271,7 @@ MonoBehaviour:
   isAttacking: 0
   isDead: 0
   Attack_Wrought: {fileID: 8388605136034726933}
+  TerraShard: {fileID: 5460709333654043518, guid: b9bb16b66f1400e45ba9938b06226380, type: 3}
   maxHealth: 3
   currentHealth: 0
 --- !u!95 &1300316957874004793
@@ -326,7 +327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7998414743244999910
 Transform:
   m_ObjectHideFlags: 0
@@ -384,7 +385,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.11764706}
+  m_Color: {r: 1, g: 0.38834947, b: 0, a: 0.20392157}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

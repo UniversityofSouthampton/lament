@@ -1,8 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public class Enemy_Wrought : MonoBehaviour
 {
@@ -22,6 +21,7 @@ public class Enemy_Wrought : MonoBehaviour
     [Header("References")]
     public GameObject Attack_Wrought;
     private Transform player;
+    public GameObject TerraShard;
     private Coroutine currentCoroutine;
 
     [Header("Health")]
@@ -37,6 +37,10 @@ public class Enemy_Wrought : MonoBehaviour
     AudioManager audioManager;
     
     private bool hasSpawned = false;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -104,6 +108,7 @@ public class Enemy_Wrought : MonoBehaviour
             timeBetweenShots = startTimeBetweenShots;
             currentCoroutine = StartCoroutine(ActivateAttackForSeconds(2f));
             isAttacking = true;
+            anim.SetTrigger("isAttacking");
         }
         else
         {
@@ -138,7 +143,6 @@ public class Enemy_Wrought : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             Attack_Wrought.SetActive(true);
-            anim.SetTrigger("isAttacking");
         }
 
         // Wait for the specified duration
@@ -156,12 +160,18 @@ public class Enemy_Wrought : MonoBehaviour
     {
         currentHealth -= damage;
         anim.SetTrigger("isHurt");
+        audioManager.PlaySfx(audioManager.whisperhurt);
         damageFlash.CallDMGFlash();
         if(currentHealth <= 0)
         {
+            if (roomManager != null)
+            {
+                roomManager.EnemyKilled(gameObject);
+            }
+            
             anim.SetTrigger("isDead");
+            audioManager.PlaySfx(audioManager.whisperdeath);
             StartCoroutine(DestroyEnemy());
-            roomManager.EnemyKilled(gameObject);
         }
     }
     private IEnumerator DestroyEnemy()
@@ -171,6 +181,7 @@ public class Enemy_Wrought : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Debug.Log("wrought has been killed");
         Destroy(gameObject);
+        Instantiate(TerraShard, transform.position, Quaternion.identity);
     }
 
     void Animate()
