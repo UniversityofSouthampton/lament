@@ -61,9 +61,9 @@ public class AttackNew : MonoBehaviour
 
     void HandleAttack()
     {
-        anim.SetBool("isAttacking", true);
         StartCoroutine(MeleeActive());
         isAttacking = true;
+        anim.SetTrigger("isAttacking 0");
         audioManager.PlaySfx(audioManager.playerattack);
     }
 
@@ -71,40 +71,40 @@ public class AttackNew : MonoBehaviour
     {
         if (playerControllerNew.isFacingUp)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.15f);
             upMelee.SetActive(true);
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
             isAttacking = false;
             upMelee.SetActive(false);
             
         }
         else if (playerControllerNew.isFacingDown)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.15f);
             downMelee.SetActive(true);
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
             isAttacking = false;
             downMelee.SetActive(false);
             
         }
         else if (playerControllerNew.isFacingLeft)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.15f);
             leftMelee.SetActive(true);
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
             isAttacking = false;
             leftMelee.SetActive(false);
             
         }
         else if (playerControllerNew.isFacingRight)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.15f);
             rightMelee.SetActive(true);
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
             isAttacking = false;
             rightMelee.SetActive(false);
             

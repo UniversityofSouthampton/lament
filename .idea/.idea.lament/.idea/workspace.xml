@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KeyHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KeyHUD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/AngerGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/AngerGate.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/GameManagerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SkillTree/SkillSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SkillTree/SkillSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Down Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Down Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Left Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Left Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Right Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Right Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Up Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Up Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AttackNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AttackNew.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +149,8 @@
       <workItem from="1746574105766" duration="3590000" />
       <workItem from="1746625658938" duration="6637000" />
       <workItem from="1746662864929" duration="5943000" />
-      <workItem from="1746808858131" duration="5574000" />
+      <workItem from="1746808858131" duration="6225000" />
+      <workItem from="1746881949645" duration="1216000" />
     </task>
     <servers />
   </component>
