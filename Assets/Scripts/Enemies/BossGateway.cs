@@ -43,6 +43,7 @@ public class BossGateway : MonoBehaviour
         hasNoKey.SetActive(true);
         yield return new WaitForSeconds(UIDuration);
         hasNoKey.SetActive(false);
+        PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.maxHealth;
         yield return SceneManager.LoadSceneAsync("Hub");
     }
 

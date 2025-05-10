@@ -31,12 +31,16 @@ public class SkillTreeManager : MonoBehaviour
 
     private void OnEnable()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SkillSlot.OnAbilityPointSpent += HandleAbilityPointsSpent;
         SkillSlot.OnSkillMaxed += HandleSkillMaxed;
     }
 
     private void OnDisable()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SkillSlot.OnAbilityPointSpent -= HandleAbilityPointsSpent;
         SkillSlot.OnSkillMaxed -= HandleSkillMaxed;
     }

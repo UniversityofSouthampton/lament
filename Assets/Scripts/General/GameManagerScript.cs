@@ -28,6 +28,7 @@ public class GameManagerScript : MonoBehaviour
         */
         setTimeScale();
 
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
@@ -46,6 +47,7 @@ public class GameManagerScript : MonoBehaviour
             {
                 startEnemies();
                 Resume();
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 player.GetComponent<AttackNew>().enabled = true;
                 player.GetComponent<PlayerControllerNew>().enabled = true;
@@ -54,6 +56,7 @@ public class GameManagerScript : MonoBehaviour
             {
                 stopEnemies();
                 Pause();
+                Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 player.GetComponent<AttackNew>().enabled = false;
                 player.GetComponent<PlayerControllerNew>().enabled = false;
@@ -69,7 +72,6 @@ public class GameManagerScript : MonoBehaviour
         {
             //setTimeScale();
             isGameOverScreenActive = false;
-            //Cursor.visible = false;
             startEnemies();
         }
     }
@@ -117,6 +119,7 @@ public class GameManagerScript : MonoBehaviour
         yield return new WaitForSeconds(1.2f);
         Time.timeScale = 0f;
         isGameOverScreenActive = true;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
     //pause screen actions
@@ -125,6 +128,7 @@ public class GameManagerScript : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
@@ -133,6 +137,7 @@ public class GameManagerScript : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
     //death screen actions
@@ -140,6 +145,8 @@ public class GameManagerScript : MonoBehaviour
     {
         //turns on gameoverscreen when the player dies
         gameOverUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     //button actions
@@ -154,6 +161,7 @@ public class GameManagerScript : MonoBehaviour
     public void restarttut()
     {
         //sends player back to tutorial
+        PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.maxHealth;
         _sceneTransition.LoadScene("Tutorial");
         setTimeScale();
     }
