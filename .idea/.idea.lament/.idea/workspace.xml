@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="af9111e4-98b7-4730-9e4f-233b7b4f34a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lament/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Down Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Down Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Left Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Left Attack.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Right Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Right Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player Animations/Attack/Up Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Animations/Attack/Up Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AttackNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AttackNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/AngerGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/AngerGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/BargainingGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/BargainingGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DenialGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DenialGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/DepressionGate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/DungeonTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/DungeonTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Idle/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Idle/Player.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +152,7 @@
       <workItem from="1746625658938" duration="6637000" />
       <workItem from="1746662864929" duration="5943000" />
       <workItem from="1746808858131" duration="6225000" />
-      <workItem from="1746881949645" duration="1216000" />
+      <workItem from="1746881949645" duration="3567000" />
     </task>
     <servers />
   </component>

@@ -7,10 +7,12 @@ public class DungeonTransition : MonoBehaviour
 {
     Animator anim;
     
+    AudioManager audioManager;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +20,8 @@ public class DungeonTransition : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             anim.SetTrigger("Opening");
+            
+            audioManager.PlaySfx(audioManager.ambience);
         }
     }
 

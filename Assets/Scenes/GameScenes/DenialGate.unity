@@ -7962,8 +7962,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 35.51
   m_PointLightOuterAngle: 179.2
-  m_PointLightInnerRadius: 14.50536
-  m_PointLightOuterRadius: 25.639784
+  m_PointLightInnerRadius: 19.59404
+  m_PointLightOuterRadius: 27.398577
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -7982,7 +7982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842393874}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.9999987, w: -0.0016320902}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9999983, w: 0.0018815201}
   m_LocalPosition: {x: 0, y: 8.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
