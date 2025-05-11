@@ -14,6 +14,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject pauseMenuUI;
    
     public GameObject player;
+    public Canvas SkillsCanvas;
 
     [SerializeField]
     public SceneTransition _sceneTransition;
@@ -39,29 +40,29 @@ public class GameManagerScript : MonoBehaviour
 
 //        Debug.Log("Game pause" + GameIsPaused);
 
+            if (Input.GetKeyDown(KeyCode.Escape) && !gameOverUI.activeSelf && !SkillsCanvas.isActiveAndEnabled) //when esc is pressed the game will pause
+            {
+                if (GameIsPaused)
+                {
+                    startEnemies();
+                    Resume();
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                    player.GetComponent<AttackNew>().enabled = true;
+                    player.GetComponent<PlayerControllerNew>().enabled = true;
+                }
+                else
+                {
+                    stopEnemies();
+                    Pause();
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    player.GetComponent<AttackNew>().enabled = false;
+                    player.GetComponent<PlayerControllerNew>().enabled = false;
+                }
+            }
         
-        //when esc is pressed the game will pause
-        if (Input.GetKeyDown(KeyCode.Escape) && !gameOverUI.activeSelf)
-        {
-            if (GameIsPaused)
-            {
-                startEnemies();
-                Resume();
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                player.GetComponent<AttackNew>().enabled = true;
-                player.GetComponent<PlayerControllerNew>().enabled = true;
-            }
-            else
-            {
-                stopEnemies();
-                Pause();
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                player.GetComponent<AttackNew>().enabled = false;
-                player.GetComponent<PlayerControllerNew>().enabled = false;
-            }
-        }
+        
         // Show cursor when the gameoverscreen is active and hide the cursor when the gameoverscreen is inactive
         if (gameOverUI.activeInHierarchy)
         {

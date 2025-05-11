@@ -6,7 +6,7 @@ public class DoorUI : MonoBehaviour
 {
     public GameObject DoorUI_Text;
 
-    private float UIDuration = 2.5f;
+    private float UIDuration = 3f;
 
 
     void OnTriggerEnter2D(Collider2D other)
