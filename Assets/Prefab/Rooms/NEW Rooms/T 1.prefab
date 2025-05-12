@@ -81,7 +81,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4197953778115232000}
-  - {fileID: 4996684314887747448}
   - {fileID: 1037434731228935449}
   - {fileID: 2397924980030419858}
   - {fileID: 5889500144511544681}
@@ -643,9 +642,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 1}
+  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -726,12 +725,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05952381, y: 0.12195122, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5501853826730403727}
   - {fileID: 4277225994147674832}
-  m_Father: {fileID: 6538105674797917707}
+  m_Father: {fileID: 4197953778115232000}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674522117864921169
 GameObject:
@@ -2780,7 +2779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5957804952149517847
 Transform:
   m_ObjectHideFlags: 0
@@ -3416,9 +3415,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 1}
+  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3767,9 +3766,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 1}
+  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4506,9 +4505,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 1}
+  m_Color: {r: 0.3519936, g: 0.524538, b: 0.6603774, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4595,7 +4594,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 16.8, y: 8.2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4996684314887747448}
   m_Father: {fileID: 6538105674797917707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3882564340578737550
@@ -6599,7 +6599,7 @@ Tilemap:
       - {fileID: -652589256, guid: 10006d1d553c71747ba8393fcf54303a, type: 3}
       - {fileID: 456887048, guid: 10006d1d553c71747ba8393fcf54303a, type: 3}
       - {fileID: 650648302, guid: 10006d1d553c71747ba8393fcf54303a, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -3, y: 3, z: 0}

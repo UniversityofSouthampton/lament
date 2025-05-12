@@ -7,29 +7,21 @@ public class TriggerDoor : MonoBehaviour
     public string DoorCloseAnimationParam = "DoorClose";
     
     Animator animator;
+    
     void Start()
     {
-        animator.SetBool("IsOpen", false); // Triggers transition to Close
-        animator.Play("Door Close", 0, 0f);
-    }
-    public void OpenDoor()
-    {
-        animator.SetBool("IsOpen", true);
+        animator = GetComponent<Animator>();
     }
 
-    public void CloseDoor()
+    public void RoomCleared()
     {
-        animator.SetBool("IsOpen", false);
+        animator.SetBool(DoorCloseAnimationParam, false);
     }
 
-    private void OnEnable()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        CloseDoor();
+        animator.SetBool(DoorCloseAnimationParam, true);
     }
-    private IEnumerator DestroyAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
-    }
+    
     
 }

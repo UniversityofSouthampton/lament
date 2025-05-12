@@ -43,7 +43,8 @@ public class RoomManager : MonoBehaviour
 
         if(enemies.Count == 0)
         {
-            DeactivateDoors();
+            BroadcastMessage("RoomCleared");
+            Invoke("DeactivateDoors", 1);
         }
     }
 
