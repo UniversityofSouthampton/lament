@@ -161,9 +161,10 @@ public class GameManagerScript : MonoBehaviour
 
     public void restarttut()
     {
-        //sends player back to tutorial
+        //sends player back to tutorial cutscene
         PlayerStatsManager.Instance.currentHealth = PlayerStatsManager.Instance.maxHealth;
-        _sceneTransition.LoadScene("Tutorial");
+        string Tutorial = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(Tutorial);
         setTimeScale();
     }
 
@@ -171,6 +172,7 @@ public class GameManagerScript : MonoBehaviour
     {
         //sends player back to main menu
         _sceneTransition.LoadScene("MainMenu");
+        Debug.Log("Player sent back to main menu");
         setTimeScale();
     }
 
