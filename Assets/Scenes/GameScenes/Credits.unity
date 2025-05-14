@@ -201,16 +201,94 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Credits -\nBased on the 'Lament' Games Design Document by Anna Bonadio\n\n-
-    PRODUCTION - \nGame Director / Producer\nAysa Atalay\n\n- PROGRAMMING & TECHNICAL
-    -\nLead Programmer\nE-Jay Tripoli\n\nProgrammer\nAysa Atalay\n\nTechnical Designer\nE-Jay
-    Tripoli\n\n- DESIGN - \nGame Designers\nE-Jay Tripoli \u2022 Aysa Atalay \u2022
-    Xane Rashad\n\nSystems & Mechanics Designer\nAysa Atalay\n\nLevel Designer\nXane
-    Rashad\n\nUI / UX Designer\nAysa Atalay\n\nWorld / Narrative Designer\nJoshua
-    Bates\n\n- ART & ANIMATION - \nCharacter & Promotional Artist\nRiya Limbu\n\nEnvironment
-    Artist\nXane Rashad\n\nAnimation\nRiya Limbu \u2022 Xane Rashad\n\nCinematics
-    Director\nAysa Atalay\n\n- AUDIO - \nComposer\nJoshua Bates\n\nSound Designers\nAysa
-    Atalay \u2022 Xane Rashad"
+  m_text: '- Credits -
+
+    Based on the Games Design Document ''Lament'' by Anna
+    Bonadio
+
+    
+
+    - Aysa Atalay -
+
+    Project Manager
+
+    Cinematics Designer
+
+    Game
+    Designer
+
+    Mechanics Designer
+
+    Programmer
+
+    Sound Designer
+
+    UI/UX
+    Designer
+
+    
+
+    
+
+    - E-Jay Tripoli -
+
+    Game Designer
+
+    Lead
+    Programmer
+
+    Technical Designer
+
+    Systems Designer
+
+    
+
+    
+
+    -
+    Joshua Bates -
+
+    Composer
+
+    World Designer
+
+    
+
+    
+
+    -Riya
+    Limbu-
+
+    Animator
+
+    Character Artist
+
+    Promotional Artist
+
+    Sound
+    Designer
+
+    
+
+    
+
+    -Xane El Deen Rashad-
+
+    Animator
+
+    Environment
+    Artist
+
+    Game Designer
+
+    Level Designer
+
+    Sound Designer
+
+    Technical
+    Artist
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ef5011725434fd4a8182da018facfa4, type: 2}
   m_sharedMaterial: {fileID: 3944921822204834399, guid: 4ef5011725434fd4a8182da018facfa4, type: 2}
